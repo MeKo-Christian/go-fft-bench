@@ -29,6 +29,16 @@ To run inverse FFT benchmarks:
 go test -bench=BenchmarkIFFT -benchmem ./bench
 ```
 
+To run single-precision (complex64) FFT benchmarks:
+```bash
+go test -bench=BenchmarkFFT32 -benchmem ./bench
+```
+
+To run single-precision (complex64) inverse FFT benchmarks:
+```bash
+go test -bench=BenchmarkIFFT32 -benchmem ./bench
+```
+
 To run accuracy tests:
 ```bash
 go test -run=TestFFTRoundTrip ./bench
@@ -42,6 +52,7 @@ See [BENCHMARKS.md](BENCHMARKS.md) for detailed benchmark results.
 
 ## Notes
 
-- These benchmarks focus on 1D complex forward and inverse FFTs in double precision (`complex128`).
+- These benchmarks focus on 1D complex forward and inverse FFTs in double precision (`complex128`) and single precision (`complex64`).
+- Only `algo-fft` currently supports single-precision benchmarking.
 - `go-dsp/fft` allocates on every call (no reusable plan), so its results will include allocation overhead.
 - Accuracy tests verify that FFT → IFFT round-trip preserves the original data within numerical tolerance.

@@ -1,5 +1,5 @@
-github.com/MeKo-Christian/algo-fft v0.5.1 h1:wFmZ5GGNcgKo+OWfAMbF1Uh5MoY3dg458xicEfkhEIM=
-github.com/MeKo-Christian/algo-fft v0.5.1/go.mod h1:kOyncsY00JWPZZrmtRo4+1AckmOzvVhTqvQP7CE1ylI=
+github.com/MeKo-Christian/algo-fft v0.5.4 h1:KcYp+pJvDdrlO0HBOF5IysOQ/jhjvKLYFZh2/Q40HXA=
+github.com/MeKo-Christian/algo-fft v0.5.4/go.mod h1:kOyncsY00JWPZZrmtRo4+1AckmOzvVhTqvQP7CE1ylI=
 github.com/meko-christian/go-fftw v0.0.0-20251231164450-5e4b0d6000a5 h1:JXhYt0G38zAP2kuYUmYdV/ULpNvXD06/B9K6TIY1Yrs=
 github.com/meko-christian/go-fftw v0.0.0-20251231164450-5e4b0d6000a5/go.mod h1:cv4QOJufv8Vod9U37vx07zAAqM7ajS4G6viOH8yrTWg=
 github.com/mjibson/go-dsp v0.0.0-20180508042940-11479a337f12 h1:dd7vnTDfjtwCETZDrRe+GPYNLA1jBtbZeyfyE8eZCyk=

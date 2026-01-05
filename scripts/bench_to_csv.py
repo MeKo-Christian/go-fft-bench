@@ -12,11 +12,11 @@ BENCH_RE = re.compile(
     r"(\d+)\s+allocs/op"       # allocs/op
 )
 
-NAME_RE = re.compile(r"^BenchmarkFFT/([^/]+)/([0-9]+)-\d+$")
+NAME_RE = re.compile(r"^Benchmark(FFT|IFFT|FFT32|IFFT32)/([^/]+)/([0-9]+)-\d+$")
 
 writer = csv.writer(sys.stdout)
 writer.writerow([
-    "benchmark",
+    "type",
     "library",
     "size",
     "iterations",
@@ -35,14 +35,15 @@ for line in sys.stdin:
         continue
 
     name, iterations, ns_per_op, mb_per_s, bytes_per_op, allocs_per_op = match.groups()
+    bench_type = ""
     library = ""
     size = ""
     name_match = NAME_RE.match(name)
     if name_match:
-        library, size = name_match.groups()
+        bench_type, library, size = name_match.groups()
 
     writer.writerow([
-        name,
+        bench_type,
         library,
         size,
         iterations,
