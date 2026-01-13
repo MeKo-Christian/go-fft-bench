@@ -35,13 +35,13 @@ def main():
     output = []
     output.append("# Benchmarks")
     output.append("")
-    output.append("Command used: \`FFT_BENCH_MAX=32768 GOAMD64=v3 go test -tags=asm -bench . -benchmem ./bench\`")
+    output.append(r"Command used: \`FFT_BENCH_MAX=32768 GOAMD64=v3 go test -tags=asm -bench . -benchmem ./bench\`")
     output.append("")
     output.append("Notes:")
     output.append("- Results are from the latest local run.")
-    output.append("- \`algo-fft\` benchmarks include both complex128 and complex64.")
-    output.append("- \`go-fftw\` requires FFTW shared libraries.")
-    output.append("- \`go-dsp-fft\` allocates on every call (no reusable plan).")
+    output.append(r"- \`algo-fft\` benchmarks include both complex128 and complex64.")
+    output.append(r"- \`go-fftw\` requires FFTW shared libraries.")
+    output.append(r"- \`go-dsp-fft\` allocates on every call (no reusable plan).")
     output.append("")
     
     # Sort benchmark types: FFT, IFFT, FFT32, IFFT32

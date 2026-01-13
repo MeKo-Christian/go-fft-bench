@@ -63,6 +63,20 @@ func BenchmarkIFFT(b *testing.B) {
 }
 
 func benchAlgoFFT(b *testing.B, n int) {
+	// Try FastPlan first
+	if fastPlan, err := algofft.NewFastPlan[complex128](n); err == nil {
+		src := make([]complex128, n)
+		dst := make([]complex128, n)
+		fillComplex128(src)
+
+		b.SetBytes(int64(n) * 16)
+		b.ResetTimer()
+		for i := 0; i < b.N; i++ {
+			fastPlan.Forward(dst, src)
+		}
+		return
+	}
+
 	plan, err := algofft.NewPlan64(n)
 	if err != nil {
 		b.Fatalf("algo-fft plan: %v", err)
@@ -132,6 +146,20 @@ func benchTakatoh(b *testing.B, n int) {
 }
 
 func benchAlgoIFFT(b *testing.B, n int) {
+	// Try FastPlan first
+	if fastPlan, err := algofft.NewFastPlan[complex128](n); err == nil {
+		src := make([]complex128, n)
+		dst := make([]complex128, n)
+		fillComplex128(src)
+
+		b.SetBytes(int64(n) * 16)
+		b.ResetTimer()
+		for i := 0; i < b.N; i++ {
+			fastPlan.Inverse(dst, src)
+		}
+		return
+	}
+
 	plan, err := algofft.NewPlan64(n)
 	if err != nil {
 		b.Fatalf("algo-fft plan: %v", err)
@@ -151,6 +179,20 @@ func benchAlgoIFFT(b *testing.B, n int) {
 }
 
 func benchAlgoFFT32(b *testing.B, n int) {
+	// Try FastPlan first
+	if fastPlan, err := algofft.NewFastPlan[complex64](n); err == nil {
+		src := make([]complex64, n)
+		dst := make([]complex64, n)
+		fillComplex64(src)
+
+		b.SetBytes(int64(n) * 8)
+		b.ResetTimer()
+		for i := 0; i < b.N; i++ {
+			fastPlan.Forward(dst, src)
+		}
+		return
+	}
+
 	plan, err := algofft.NewPlan32(n)
 	if err != nil {
 		b.Fatalf("algo-fft plan: %v", err)
@@ -170,6 +212,20 @@ func benchAlgoFFT32(b *testing.B, n int) {
 }
 
 func benchAlgoIFFT32(b *testing.B, n int) {
+	// Try FastPlan first
+	if fastPlan, err := algofft.NewFastPlan[complex64](n); err == nil {
+		src := make([]complex64, n)
+		dst := make([]complex64, n)
+		fillComplex64(src)
+
+		b.SetBytes(int64(n) * 8)
+		b.ResetTimer()
+		for i := 0; i < b.N; i++ {
+			fastPlan.Inverse(dst, src)
+		}
+		return
+	}
+
 	plan, err := algofft.NewPlan32(n)
 	if err != nil {
 		b.Fatalf("algo-fft plan: %v", err)
