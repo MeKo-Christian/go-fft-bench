@@ -7,9 +7,9 @@ import (
 	"strconv"
 	"testing"
 
-	algofft "github.com/MeKo-Christian/algo-fft"
-	"github.com/meko-christian/go-fftw/fftw"
-	"github.com/mjibson/go-dsp/fft"
+	algofft "github.com/cwbudde/algo-fft"
+	"github.com/cwbudde/go-fftw/fftw"
+	"github.com/madelynnblue/go-dsp/fft"
 	takatohfft "github.com/takatoh/fft"
 	"gonum.org/v1/gonum/dsp/fourier"
 )
