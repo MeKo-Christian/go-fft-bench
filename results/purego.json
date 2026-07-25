@@ -1,0 +1,3013 @@
+{
+  "meta": {
+    "label": "purego",
+    "tags": "purego",
+    "goamd64": "v3",
+    "goVersion": "go1.26.1",
+    "cpu": "12th Gen Intel(R) Core(TM) i7-1255U",
+    "maxSize": 32768,
+    "algoFFTVersion": "v0.7.0"
+  },
+  "results": [
+    {
+      "benchType": "FFT",
+      "library": "algo-fft",
+      "size": 8,
+      "class": "pow2",
+      "nsOp": 26.44,
+      "mbPerSec": 4841.9,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFT",
+      "library": "go-dsp-fft",
+      "size": 8,
+      "class": "pow2",
+      "nsOp": 13496,
+      "mbPerSec": 9.48,
+      "bytesPerOp": 759,
+      "allocsPerOp": 17
+    },
+    {
+      "benchType": "FFT",
+      "library": "go-fftw",
+      "size": 8,
+      "class": "pow2",
+      "nsOp": 97.38,
+      "mbPerSec": 1314.47,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFT",
+      "library": "gonum",
+      "size": 8,
+      "class": "pow2",
+      "nsOp": 1015,
+      "mbPerSec": 126.07,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFT",
+      "library": "takatoh",
+      "size": 8,
+      "class": "pow2",
+      "nsOp": 731.8,
+      "mbPerSec": 174.92,
+      "bytesPerOp": 128,
+      "allocsPerOp": 1
+    },
+    {
+      "benchType": "FFT",
+      "library": "algo-fft",
+      "size": 16,
+      "class": "pow2",
+      "nsOp": 120.6,
+      "mbPerSec": 2122.84,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFT",
+      "library": "go-dsp-fft",
+      "size": 16,
+      "class": "pow2",
+      "nsOp": 17039,
+      "mbPerSec": 15.02,
+      "bytesPerOp": 1180,
+      "allocsPerOp": 25
+    },
+    {
+      "benchType": "FFT",
+      "library": "go-fftw",
+      "size": 16,
+      "class": "pow2",
+      "nsOp": 123.2,
+      "mbPerSec": 2077.35,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFT",
+      "library": "gonum",
+      "size": 16,
+      "class": "pow2",
+      "nsOp": 1629,
+      "mbPerSec": 157.11,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFT",
+      "library": "takatoh",
+      "size": 16,
+      "class": "pow2",
+      "nsOp": 2236,
+      "mbPerSec": 114.51,
+      "bytesPerOp": 256,
+      "allocsPerOp": 1
+    },
+    {
+      "benchType": "FFT",
+      "library": "algo-fft",
+      "size": 32,
+      "class": "pow2",
+      "nsOp": 282.4,
+      "mbPerSec": 1812.78,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFT",
+      "library": "go-dsp-fft",
+      "size": 32,
+      "class": "pow2",
+      "nsOp": 18844,
+      "mbPerSec": 27.17,
+      "bytesPerOp": 2076,
+      "allocsPerOp": 41
+    },
+    {
+      "benchType": "FFT",
+      "library": "go-fftw",
+      "size": 32,
+      "class": "pow2",
+      "nsOp": 199.4,
+      "mbPerSec": 2567.84,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFT",
+      "library": "gonum",
+      "size": 32,
+      "class": "pow2",
+      "nsOp": 6243,
+      "mbPerSec": 82.01,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFT",
+      "library": "takatoh",
+      "size": 32,
+      "class": "pow2",
+      "nsOp": 5191,
+      "mbPerSec": 98.63,
+      "bytesPerOp": 512,
+      "allocsPerOp": 1
+    },
+    {
+      "benchType": "FFT",
+      "library": "algo-fft",
+      "size": 64,
+      "class": "pow2",
+      "nsOp": 537,
+      "mbPerSec": 1906.87,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFT",
+      "library": "go-dsp-fft",
+      "size": 64,
+      "class": "pow2",
+      "nsOp": 26764,
+      "mbPerSec": 38.26,
+      "bytesPerOp": 3407,
+      "allocsPerOp": 44
+    },
+    {
+      "benchType": "FFT",
+      "library": "go-fftw",
+      "size": 64,
+      "class": "pow2",
+      "nsOp": 316.6,
+      "mbPerSec": 3234.09,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFT",
+      "library": "gonum",
+      "size": 64,
+      "class": "pow2",
+      "nsOp": 8449,
+      "mbPerSec": 121.19,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFT",
+      "library": "takatoh",
+      "size": 64,
+      "class": "pow2",
+      "nsOp": 12987,
+      "mbPerSec": 78.85,
+      "bytesPerOp": 1024,
+      "allocsPerOp": 1
+    },
+    {
+      "benchType": "FFT",
+      "library": "algo-fft",
+      "size": 128,
+      "class": "pow2",
+      "nsOp": 1208,
+      "mbPerSec": 1695.35,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFT",
+      "library": "go-dsp-fft",
+      "size": 128,
+      "class": "pow2",
+      "nsOp": 29872,
+      "mbPerSec": 68.56,
+      "bytesPerOp": 6272,
+      "allocsPerOp": 55
+    },
+    {
+      "benchType": "FFT",
+      "library": "go-fftw",
+      "size": 128,
+      "class": "pow2",
+      "nsOp": 759.1,
+      "mbPerSec": 2697.88,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFT",
+      "library": "gonum",
+      "size": 128,
+      "class": "pow2",
+      "nsOp": 21848,
+      "mbPerSec": 93.74,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFT",
+      "library": "takatoh",
+      "size": 128,
+      "class": "pow2",
+      "nsOp": 27331,
+      "mbPerSec": 74.93,
+      "bytesPerOp": 2048,
+      "allocsPerOp": 1
+    },
+    {
+      "benchType": "FFT",
+      "library": "algo-fft",
+      "size": 256,
+      "class": "pow2",
+      "nsOp": 3092,
+      "mbPerSec": 1324.69,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFT",
+      "library": "go-dsp-fft",
+      "size": 256,
+      "class": "pow2",
+      "nsOp": 50804,
+      "mbPerSec": 80.62,
+      "bytesPerOp": 11699,
+      "allocsPerOp": 66
+    },
+    {
+      "benchType": "FFT",
+      "library": "go-fftw",
+      "size": 256,
+      "class": "pow2",
+      "nsOp": 1315,
+      "mbPerSec": 3113.8,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFT",
+      "library": "gonum",
+      "size": 256,
+      "class": "pow2",
+      "nsOp": 48345,
+      "mbPerSec": 84.72,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFT",
+      "library": "takatoh",
+      "size": 256,
+      "class": "pow2",
+      "nsOp": 44351,
+      "mbPerSec": 92.35,
+      "bytesPerOp": 4096,
+      "allocsPerOp": 1
+    },
+    {
+      "benchType": "FFT",
+      "library": "algo-fft",
+      "size": 512,
+      "class": "pow2",
+      "nsOp": 6553,
+      "mbPerSec": 1250.18,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFT",
+      "library": "go-dsp-fft",
+      "size": 512,
+      "class": "pow2",
+      "nsOp": 79665,
+      "mbPerSec": 102.83,
+      "bytesPerOp": 22644,
+      "allocsPerOp": 78
+    },
+    {
+      "benchType": "FFT",
+      "library": "go-fftw",
+      "size": 512,
+      "class": "pow2",
+      "nsOp": 1533,
+      "mbPerSec": 5344.88,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFT",
+      "library": "gonum",
+      "size": 512,
+      "class": "pow2",
+      "nsOp": 30093,
+      "mbPerSec": 272.22,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFT",
+      "library": "takatoh",
+      "size": 512,
+      "class": "pow2",
+      "nsOp": 141711,
+      "mbPerSec": 57.81,
+      "bytesPerOp": 8192,
+      "allocsPerOp": 1
+    },
+    {
+      "benchType": "FFT",
+      "library": "algo-fft",
+      "size": 1024,
+      "class": "pow2",
+      "nsOp": 14327,
+      "mbPerSec": 1143.59,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFT",
+      "library": "go-dsp-fft",
+      "size": 1024,
+      "class": "pow2",
+      "nsOp": 121798,
+      "mbPerSec": 134.52,
+      "bytesPerOp": 43799,
+      "allocsPerOp": 88
+    },
+    {
+      "benchType": "FFT",
+      "library": "go-fftw",
+      "size": 1024,
+      "class": "pow2",
+      "nsOp": 6140,
+      "mbPerSec": 2668.4,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFT",
+      "library": "gonum",
+      "size": 1024,
+      "class": "pow2",
+      "nsOp": 234821,
+      "mbPerSec": 69.77,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFT",
+      "library": "takatoh",
+      "size": 1024,
+      "class": "pow2",
+      "nsOp": 323477,
+      "mbPerSec": 50.65,
+      "bytesPerOp": 16384,
+      "allocsPerOp": 1
+    },
+    {
+      "benchType": "FFT",
+      "library": "algo-fft",
+      "size": 2048,
+      "class": "pow2",
+      "nsOp": 60535,
+      "mbPerSec": 541.31,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFT",
+      "library": "go-dsp-fft",
+      "size": 2048,
+      "class": "pow2",
+      "nsOp": 234919,
+      "mbPerSec": 139.49,
+      "bytesPerOp": 85715,
+      "allocsPerOp": 100
+    },
+    {
+      "benchType": "FFT",
+      "library": "go-fftw",
+      "size": 2048,
+      "class": "pow2",
+      "nsOp": 15241,
+      "mbPerSec": 2150.01,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFT",
+      "library": "gonum",
+      "size": 2048,
+      "class": "pow2",
+      "nsOp": 588161,
+      "mbPerSec": 55.71,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFT",
+      "library": "takatoh",
+      "size": 2048,
+      "class": "pow2",
+      "nsOp": 674014,
+      "mbPerSec": 48.62,
+      "bytesPerOp": 32768,
+      "allocsPerOp": 1
+    },
+    {
+      "benchType": "FFT",
+      "library": "algo-fft",
+      "size": 4096,
+      "class": "pow2",
+      "nsOp": 158355,
+      "mbPerSec": 413.85,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFT",
+      "library": "go-dsp-fft",
+      "size": 4096,
+      "class": "pow2",
+      "nsOp": 515422,
+      "mbPerSec": 127.15,
+      "bytesPerOp": 165783,
+      "allocsPerOp": 112
+    },
+    {
+      "benchType": "FFT",
+      "library": "go-fftw",
+      "size": 4096,
+      "class": "pow2",
+      "nsOp": 50246,
+      "mbPerSec": 1304.31,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFT",
+      "library": "gonum",
+      "size": 4096,
+      "class": "pow2",
+      "nsOp": 1223279,
+      "mbPerSec": 53.57,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFT",
+      "library": "takatoh",
+      "size": 4096,
+      "class": "pow2",
+      "nsOp": 1556298,
+      "mbPerSec": 42.11,
+      "bytesPerOp": 65536,
+      "allocsPerOp": 1
+    },
+    {
+      "benchType": "FFT",
+      "library": "algo-fft",
+      "size": 8192,
+      "class": "pow2",
+      "nsOp": 270552,
+      "mbPerSec": 484.46,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFT",
+      "library": "go-dsp-fft",
+      "size": 8192,
+      "class": "pow2",
+      "nsOp": 994567,
+      "mbPerSec": 131.79,
+      "bytesPerOp": 329820,
+      "allocsPerOp": 124
+    },
+    {
+      "benchType": "FFT",
+      "library": "go-fftw",
+      "size": 8192,
+      "class": "pow2",
+      "nsOp": 122590,
+      "mbPerSec": 1069.19,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFT",
+      "library": "gonum",
+      "size": 8192,
+      "class": "pow2",
+      "nsOp": 3307923,
+      "mbPerSec": 39.62,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFT",
+      "library": "takatoh",
+      "size": 8192,
+      "class": "pow2",
+      "nsOp": 3339889,
+      "mbPerSec": 39.24,
+      "bytesPerOp": 131072,
+      "allocsPerOp": 1
+    },
+    {
+      "benchType": "FFT",
+      "library": "algo-fft",
+      "size": 16384,
+      "class": "pow2",
+      "nsOp": 621518,
+      "mbPerSec": 421.78,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFT",
+      "library": "go-dsp-fft",
+      "size": 16384,
+      "class": "pow2",
+      "nsOp": 1193624,
+      "mbPerSec": 219.62,
+      "bytesPerOp": 657636,
+      "allocsPerOp": 132
+    },
+    {
+      "benchType": "FFT",
+      "library": "go-fftw",
+      "size": 16384,
+      "class": "pow2",
+      "nsOp": 115080,
+      "mbPerSec": 2277.93,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFT",
+      "library": "gonum",
+      "size": 16384,
+      "class": "pow2",
+      "nsOp": 3992640,
+      "mbPerSec": 65.66,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFT",
+      "library": "takatoh",
+      "size": 16384,
+      "class": "pow2",
+      "nsOp": 6750890,
+      "mbPerSec": 38.83,
+      "bytesPerOp": 262144,
+      "allocsPerOp": 1
+    },
+    {
+      "benchType": "FFT",
+      "library": "algo-fft",
+      "size": 32768,
+      "class": "pow2",
+      "nsOp": 1253190,
+      "mbPerSec": 418.36,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFT",
+      "library": "go-dsp-fft",
+      "size": 32768,
+      "class": "pow2",
+      "nsOp": 3266674,
+      "mbPerSec": 160.5,
+      "bytesPerOp": 1313208,
+      "allocsPerOp": 144
+    },
+    {
+      "benchType": "FFT",
+      "library": "go-fftw",
+      "size": 32768,
+      "class": "pow2",
+      "nsOp": 534689,
+      "mbPerSec": 980.55,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFT",
+      "library": "gonum",
+      "size": 32768,
+      "class": "pow2",
+      "nsOp": 14928739,
+      "mbPerSec": 35.12,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFT",
+      "library": "takatoh",
+      "size": 32768,
+      "class": "pow2",
+      "nsOp": 15657338,
+      "mbPerSec": 33.49,
+      "bytesPerOp": 524288,
+      "allocsPerOp": 1
+    },
+    {
+      "benchType": "FFT32",
+      "library": "algo-fft",
+      "size": 8,
+      "class": "pow2",
+      "nsOp": 32.62,
+      "mbPerSec": 1962.15,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFT32",
+      "library": "algo-fft",
+      "size": 16,
+      "class": "pow2",
+      "nsOp": 110,
+      "mbPerSec": 1163.25,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFT32",
+      "library": "algo-fft",
+      "size": 32,
+      "class": "pow2",
+      "nsOp": 380.3,
+      "mbPerSec": 673.12,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFT32",
+      "library": "algo-fft",
+      "size": 64,
+      "class": "pow2",
+      "nsOp": 655.3,
+      "mbPerSec": 781.29,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFT32",
+      "library": "algo-fft",
+      "size": 128,
+      "class": "pow2",
+      "nsOp": 2157,
+      "mbPerSec": 474.75,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFT32",
+      "library": "algo-fft",
+      "size": 256,
+      "class": "pow2",
+      "nsOp": 5919,
+      "mbPerSec": 346,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFT32",
+      "library": "algo-fft",
+      "size": 512,
+      "class": "pow2",
+      "nsOp": 14271,
+      "mbPerSec": 287.01,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFT32",
+      "library": "algo-fft",
+      "size": 1024,
+      "class": "pow2",
+      "nsOp": 29325,
+      "mbPerSec": 279.35,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFT32",
+      "library": "algo-fft",
+      "size": 2048,
+      "class": "pow2",
+      "nsOp": 57070,
+      "mbPerSec": 287.08,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFT32",
+      "library": "algo-fft",
+      "size": 4096,
+      "class": "pow2",
+      "nsOp": 176989,
+      "mbPerSec": 185.14,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFT32",
+      "library": "algo-fft",
+      "size": 8192,
+      "class": "pow2",
+      "nsOp": 393381,
+      "mbPerSec": 166.6,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFT32",
+      "library": "algo-fft",
+      "size": 16384,
+      "class": "pow2",
+      "nsOp": 823562,
+      "mbPerSec": 159.15,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFT32",
+      "library": "algo-fft",
+      "size": 32768,
+      "class": "pow2",
+      "nsOp": 4362208,
+      "mbPerSec": 60.09,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "algo-fft",
+      "size": 96,
+      "class": "5-smooth",
+      "nsOp": 2584,
+      "mbPerSec": 594.4,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "go-dsp-fft",
+      "size": 96,
+      "class": "5-smooth",
+      "nsOp": 114534,
+      "mbPerSec": 13.41,
+      "bytesPerOp": 51563,
+      "allocsPerOp": 202
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "go-fftw",
+      "size": 96,
+      "class": "5-smooth",
+      "nsOp": 366.4,
+      "mbPerSec": 4192.02,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "gonum",
+      "size": 96,
+      "class": "5-smooth",
+      "nsOp": 5818,
+      "mbPerSec": 264.01,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "algo-fft",
+      "size": 97,
+      "class": "prime (smooth p-1)",
+      "nsOp": 3191,
+      "mbPerSec": 486.38,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "go-dsp-fft",
+      "size": 97,
+      "class": "prime (smooth p-1)",
+      "nsOp": 130767,
+      "mbPerSec": 11.87,
+      "bytesPerOp": 51492,
+      "allocsPerOp": 202
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "go-fftw",
+      "size": 97,
+      "class": "prime (smooth p-1)",
+      "nsOp": 1501,
+      "mbPerSec": 1034.03,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "gonum",
+      "size": 97,
+      "class": "prime (smooth p-1)",
+      "nsOp": 16323,
+      "mbPerSec": 95.08,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "algo-fft",
+      "size": 257,
+      "class": "prime (smooth p-1)",
+      "nsOp": 5371,
+      "mbPerSec": 765.63,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "go-dsp-fft",
+      "size": 257,
+      "class": "prime (smooth p-1)",
+      "nsOp": 195094,
+      "mbPerSec": 21.08,
+      "bytesPerOp": 196954,
+      "allocsPerOp": 268
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "go-fftw",
+      "size": 257,
+      "class": "prime (smooth p-1)",
+      "nsOp": 3589,
+      "mbPerSec": 1145.82,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "gonum",
+      "size": 257,
+      "class": "prime (smooth p-1)",
+      "nsOp": 81926,
+      "mbPerSec": 50.19,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "algo-fft",
+      "size": 448,
+      "class": "7/11-smooth",
+      "nsOp": 12645,
+      "mbPerSec": 566.88,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "go-dsp-fft",
+      "size": 448,
+      "class": "7/11-smooth",
+      "nsOp": 246112,
+      "mbPerSec": 29.12,
+      "bytesPerOp": 196955,
+      "allocsPerOp": 268
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "go-fftw",
+      "size": 448,
+      "class": "7/11-smooth",
+      "nsOp": 1198,
+      "mbPerSec": 5985.41,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "gonum",
+      "size": 448,
+      "class": "7/11-smooth",
+      "nsOp": 42273,
+      "mbPerSec": 169.57,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "algo-fft",
+      "size": 480,
+      "class": "5-smooth",
+      "nsOp": 13533,
+      "mbPerSec": 567.48,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "go-dsp-fft",
+      "size": 480,
+      "class": "5-smooth",
+      "nsOp": 303247,
+      "mbPerSec": 25.33,
+      "bytesPerOp": 196974,
+      "allocsPerOp": 268
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "go-fftw",
+      "size": 480,
+      "class": "5-smooth",
+      "nsOp": 1950,
+      "mbPerSec": 3939.15,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "gonum",
+      "size": 480,
+      "class": "5-smooth",
+      "nsOp": 15303,
+      "mbPerSec": 501.88,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "algo-fft",
+      "size": 641,
+      "class": "prime (smooth p-1)",
+      "nsOp": 23847,
+      "mbPerSec": 430.08,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "go-dsp-fft",
+      "size": 641,
+      "class": "prime (smooth p-1)",
+      "nsOp": 409832,
+      "mbPerSec": 25.02,
+      "bytesPerOp": 388261,
+      "allocsPerOp": 304
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "go-fftw",
+      "size": 641,
+      "class": "prime (smooth p-1)",
+      "nsOp": 9580,
+      "mbPerSec": 1070.58,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "gonum",
+      "size": 641,
+      "class": "prime (smooth p-1)",
+      "nsOp": 511596,
+      "mbPerSec": 20.05,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "algo-fft",
+      "size": 704,
+      "class": "7/11-smooth",
+      "nsOp": 17532,
+      "mbPerSec": 642.47,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "go-dsp-fft",
+      "size": 704,
+      "class": "7/11-smooth",
+      "nsOp": 330160,
+      "mbPerSec": 34.12,
+      "bytesPerOp": 388266,
+      "allocsPerOp": 304
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "go-fftw",
+      "size": 704,
+      "class": "7/11-smooth",
+      "nsOp": 1946,
+      "mbPerSec": 5787.31,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "gonum",
+      "size": 704,
+      "class": "7/11-smooth",
+      "nsOp": 21371,
+      "mbPerSec": 527.07,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "algo-fft",
+      "size": 768,
+      "class": "5-smooth",
+      "nsOp": 18140,
+      "mbPerSec": 677.38,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "go-dsp-fft",
+      "size": 768,
+      "class": "5-smooth",
+      "nsOp": 927501,
+      "mbPerSec": 13.25,
+      "bytesPerOp": 388252,
+      "allocsPerOp": 304
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "go-fftw",
+      "size": 768,
+      "class": "5-smooth",
+      "nsOp": 2372,
+      "mbPerSec": 5180.94,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "gonum",
+      "size": 768,
+      "class": "5-smooth",
+      "nsOp": 80825,
+      "mbPerSec": 152.03,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "algo-fft",
+      "size": 1000,
+      "class": "practical",
+      "nsOp": 53513,
+      "mbPerSec": 298.99,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "go-dsp-fft",
+      "size": 1000,
+      "class": "practical",
+      "nsOp": 1065066,
+      "mbPerSec": 15.02,
+      "bytesPerOp": 388237,
+      "allocsPerOp": 304
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "go-fftw",
+      "size": 1000,
+      "class": "practical",
+      "nsOp": 16555,
+      "mbPerSec": 966.49,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "gonum",
+      "size": 1000,
+      "class": "practical",
+      "nsOp": 235072,
+      "mbPerSec": 68.06,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "algo-fft",
+      "size": 1009,
+      "class": "prime (rough p-1)",
+      "nsOp": 34742,
+      "mbPerSec": 464.68,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "go-dsp-fft",
+      "size": 1009,
+      "class": "prime (rough p-1)",
+      "nsOp": 338850,
+      "mbPerSec": 47.64,
+      "bytesPerOp": 388276,
+      "allocsPerOp": 304
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "go-fftw",
+      "size": 1009,
+      "class": "prime (rough p-1)",
+      "nsOp": 19447,
+      "mbPerSec": 830.14,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "gonum",
+      "size": 1009,
+      "class": "prime (rough p-1)",
+      "nsOp": 1221666,
+      "mbPerSec": 13.21,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "algo-fft",
+      "size": 1152,
+      "class": "5-smooth",
+      "nsOp": 46276,
+      "mbPerSec": 398.3,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "go-dsp-fft",
+      "size": 1152,
+      "class": "5-smooth",
+      "nsOp": 926129,
+      "mbPerSec": 19.9,
+      "bytesPerOp": 759563,
+      "allocsPerOp": 340
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "go-fftw",
+      "size": 1152,
+      "class": "5-smooth",
+      "nsOp": 7790,
+      "mbPerSec": 2366.12,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "gonum",
+      "size": 1152,
+      "class": "5-smooth",
+      "nsOp": 125769,
+      "mbPerSec": 146.55,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "algo-fft",
+      "size": 1153,
+      "class": "prime (smooth p-1)",
+      "nsOp": 44726,
+      "mbPerSec": 412.46,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "go-dsp-fft",
+      "size": 1153,
+      "class": "prime (smooth p-1)",
+      "nsOp": 1593820,
+      "mbPerSec": 11.57,
+      "bytesPerOp": 759518,
+      "allocsPerOp": 340
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "go-fftw",
+      "size": 1153,
+      "class": "prime (smooth p-1)",
+      "nsOp": 28601,
+      "mbPerSec": 645.01,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "gonum",
+      "size": 1153,
+      "class": "prime (smooth p-1)",
+      "nsOp": 3707268,
+      "mbPerSec": 4.98,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "algo-fft",
+      "size": 1344,
+      "class": "7/11-smooth",
+      "nsOp": 29146,
+      "mbPerSec": 737.81,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "go-dsp-fft",
+      "size": 1344,
+      "class": "7/11-smooth",
+      "nsOp": 679735,
+      "mbPerSec": 31.64,
+      "bytesPerOp": 759543,
+      "allocsPerOp": 340
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "go-fftw",
+      "size": 1344,
+      "class": "7/11-smooth",
+      "nsOp": 3515,
+      "mbPerSec": 6118.08,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "gonum",
+      "size": 1344,
+      "class": "7/11-smooth",
+      "nsOp": 50607,
+      "mbPerSec": 424.92,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "algo-fft",
+      "size": 1920,
+      "class": "5-smooth",
+      "nsOp": 41979,
+      "mbPerSec": 731.8,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "go-dsp-fft",
+      "size": 1920,
+      "class": "5-smooth",
+      "nsOp": 691554,
+      "mbPerSec": 44.42,
+      "bytesPerOp": 759569,
+      "allocsPerOp": 340
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "go-fftw",
+      "size": 1920,
+      "class": "5-smooth",
+      "nsOp": 4188,
+      "mbPerSec": 7335.4,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "gonum",
+      "size": 1920,
+      "class": "5-smooth",
+      "nsOp": 57216,
+      "mbPerSec": 536.91,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "algo-fft",
+      "size": 2003,
+      "class": "prime (rough p-1)",
+      "nsOp": 108344,
+      "mbPerSec": 295.8,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "go-dsp-fft",
+      "size": 2003,
+      "class": "prime (rough p-1)",
+      "nsOp": 701449,
+      "mbPerSec": 45.69,
+      "bytesPerOp": 759548,
+      "allocsPerOp": 340
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "go-fftw",
+      "size": 2003,
+      "class": "prime (rough p-1)",
+      "nsOp": 44847,
+      "mbPerSec": 714.61,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "gonum",
+      "size": 2003,
+      "class": "prime (rough p-1)",
+      "nsOp": 4973020,
+      "mbPerSec": 6.44,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "algo-fft",
+      "size": 2016,
+      "class": "7/11-smooth",
+      "nsOp": 48116,
+      "mbPerSec": 670.38,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "go-dsp-fft",
+      "size": 2016,
+      "class": "7/11-smooth",
+      "nsOp": 795759,
+      "mbPerSec": 40.53,
+      "bytesPerOp": 759546,
+      "allocsPerOp": 340
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "go-fftw",
+      "size": 2016,
+      "class": "7/11-smooth",
+      "nsOp": 5470,
+      "mbPerSec": 5896.36,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "gonum",
+      "size": 2016,
+      "class": "7/11-smooth",
+      "nsOp": 89430,
+      "mbPerSec": 360.69,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "algo-fft",
+      "size": 2205,
+      "class": "practical",
+      "nsOp": 170236,
+      "mbPerSec": 207.24,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "go-dsp-fft",
+      "size": 2205,
+      "class": "practical",
+      "nsOp": 3566935,
+      "mbPerSec": 9.89,
+      "bytesPerOp": 1513754,
+      "allocsPerOp": 376
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "go-fftw",
+      "size": 2205,
+      "class": "practical",
+      "nsOp": 18169,
+      "mbPerSec": 1941.78,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "gonum",
+      "size": 2205,
+      "class": "practical",
+      "nsOp": 841766,
+      "mbPerSec": 41.91,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "algo-fft",
+      "size": 3600,
+      "class": "practical",
+      "nsOp": 240569,
+      "mbPerSec": 239.43,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "go-dsp-fft",
+      "size": 3600,
+      "class": "practical",
+      "nsOp": 4300991,
+      "mbPerSec": 13.39,
+      "bytesPerOp": 1513765,
+      "allocsPerOp": 376
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "go-fftw",
+      "size": 3600,
+      "class": "practical",
+      "nsOp": 55135,
+      "mbPerSec": 1044.7,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "gonum",
+      "size": 3600,
+      "class": "practical",
+      "nsOp": 1067411,
+      "mbPerSec": 53.96,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "algo-fft",
+      "size": 4001,
+      "class": "prime (smooth p-1)",
+      "nsOp": 611594,
+      "mbPerSec": 104.67,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "go-dsp-fft",
+      "size": 4001,
+      "class": "prime (smooth p-1)",
+      "nsOp": 1770549,
+      "mbPerSec": 36.16,
+      "bytesPerOp": 1513781,
+      "allocsPerOp": 376
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "go-fftw",
+      "size": 4001,
+      "class": "prime (smooth p-1)",
+      "nsOp": 156309,
+      "mbPerSec": 409.55,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "gonum",
+      "size": 4001,
+      "class": "prime (smooth p-1)",
+      "nsOp": 47804026,
+      "mbPerSec": 1.34,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "algo-fft",
+      "size": 9973,
+      "class": "prime (rough p-1)",
+      "nsOp": 1200737,
+      "mbPerSec": 132.89,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "go-dsp-fft",
+      "size": 9973,
+      "class": "prime (rough p-1)",
+      "nsOp": 14067226,
+      "mbPerSec": 11.34,
+      "bytesPerOp": 6036849,
+      "allocsPerOp": 437
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "go-fftw",
+      "size": 9973,
+      "class": "prime (rough p-1)",
+      "nsOp": 200578,
+      "mbPerSec": 795.54,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "gonum",
+      "size": 9973,
+      "class": "prime (rough p-1)",
+      "nsOp": 124214711,
+      "mbPerSec": 1.28,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "algo-fft",
+      "size": 12000,
+      "class": "5-smooth",
+      "nsOp": 291044,
+      "mbPerSec": 659.69,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "go-dsp-fft",
+      "size": 12000,
+      "class": "5-smooth",
+      "nsOp": 8192173,
+      "mbPerSec": 23.44,
+      "bytesPerOp": 6036863,
+      "allocsPerOp": 437
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "go-fftw",
+      "size": 12000,
+      "class": "5-smooth",
+      "nsOp": 49672,
+      "mbPerSec": 3865.33,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "gonum",
+      "size": 12000,
+      "class": "5-smooth",
+      "nsOp": 433274,
+      "mbPerSec": 443.14,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "algo-fft",
+      "size": 12289,
+      "class": "prime (smooth p-1)",
+      "nsOp": 1412739,
+      "mbPerSec": 139.18,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "go-dsp-fft",
+      "size": 12289,
+      "class": "prime (smooth p-1)",
+      "nsOp": 4914567,
+      "mbPerSec": 40.01,
+      "bytesPerOp": 6036867,
+      "allocsPerOp": 437
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "go-fftw",
+      "size": 12289,
+      "class": "prime (smooth p-1)",
+      "nsOp": 479711,
+      "mbPerSec": 409.88,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "gonum",
+      "size": 12289,
+      "class": "prime (smooth p-1)",
+      "nsOp": 192973197,
+      "mbPerSec": 1.02,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "algo-fft",
+      "size": 44100,
+      "class": "practical",
+      "nsOp": 23784064,
+      "mbPerSec": 29.67,
+      "bytesPerOp": 64,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "go-dsp-fft",
+      "size": 44100,
+      "class": "practical",
+      "nsOp": 65909762,
+      "mbPerSec": 10.71,
+      "bytesPerOp": 24126012,
+      "allocsPerOp": 502
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "go-fftw",
+      "size": 44100,
+      "class": "practical",
+      "nsOp": 972390,
+      "mbPerSec": 725.63,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "gonum",
+      "size": 44100,
+      "class": "practical",
+      "nsOp": 22238095,
+      "mbPerSec": 31.73,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny32",
+      "library": "algo-fft",
+      "size": 96,
+      "class": "5-smooth",
+      "nsOp": 4785,
+      "mbPerSec": 160.49,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny32",
+      "library": "algo-fft",
+      "size": 97,
+      "class": "prime (smooth p-1)",
+      "nsOp": 74019,
+      "mbPerSec": 10.48,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny32",
+      "library": "algo-fft",
+      "size": 257,
+      "class": "prime (smooth p-1)",
+      "nsOp": 146915,
+      "mbPerSec": 13.99,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny32",
+      "library": "algo-fft",
+      "size": 448,
+      "class": "7/11-smooth",
+      "nsOp": 122703,
+      "mbPerSec": 29.21,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny32",
+      "library": "algo-fft",
+      "size": 480,
+      "class": "5-smooth",
+      "nsOp": 31127,
+      "mbPerSec": 123.37,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny32",
+      "library": "algo-fft",
+      "size": 641,
+      "class": "prime (smooth p-1)",
+      "nsOp": 791066,
+      "mbPerSec": 6.48,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny32",
+      "library": "algo-fft",
+      "size": 704,
+      "class": "7/11-smooth",
+      "nsOp": 363204,
+      "mbPerSec": 15.51,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny32",
+      "library": "algo-fft",
+      "size": 768,
+      "class": "5-smooth",
+      "nsOp": 72361,
+      "mbPerSec": 84.91,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny32",
+      "library": "algo-fft",
+      "size": 1000,
+      "class": "practical",
+      "nsOp": 641957,
+      "mbPerSec": 12.46,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny32",
+      "library": "algo-fft",
+      "size": 1009,
+      "class": "prime (rough p-1)",
+      "nsOp": 748264,
+      "mbPerSec": 10.79,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny32",
+      "library": "algo-fft",
+      "size": 1152,
+      "class": "5-smooth",
+      "nsOp": 107952,
+      "mbPerSec": 85.37,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny32",
+      "library": "algo-fft",
+      "size": 1153,
+      "class": "prime (smooth p-1)",
+      "nsOp": 1011646,
+      "mbPerSec": 9.12,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny32",
+      "library": "algo-fft",
+      "size": 1344,
+      "class": "7/11-smooth",
+      "nsOp": 2337661,
+      "mbPerSec": 4.6,
+      "bytesPerOp": 2,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny32",
+      "library": "algo-fft",
+      "size": 1920,
+      "class": "5-smooth",
+      "nsOp": 178467,
+      "mbPerSec": 86.07,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny32",
+      "library": "algo-fft",
+      "size": 2003,
+      "class": "prime (rough p-1)",
+      "nsOp": 3115238,
+      "mbPerSec": 5.14,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny32",
+      "library": "algo-fft",
+      "size": 2016,
+      "class": "7/11-smooth",
+      "nsOp": 2688105,
+      "mbPerSec": 6,
+      "bytesPerOp": 2,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny32",
+      "library": "algo-fft",
+      "size": 2205,
+      "class": "practical",
+      "nsOp": 292291,
+      "mbPerSec": 60.35,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny32",
+      "library": "algo-fft",
+      "size": 3600,
+      "class": "practical",
+      "nsOp": 314790,
+      "mbPerSec": 91.49,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny32",
+      "library": "algo-fft",
+      "size": 4001,
+      "class": "prime (smooth p-1)",
+      "nsOp": 12232026,
+      "mbPerSec": 2.62,
+      "bytesPerOp": 2,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny32",
+      "library": "algo-fft",
+      "size": 9973,
+      "class": "prime (rough p-1)",
+      "nsOp": 27404843,
+      "mbPerSec": 2.91,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny32",
+      "library": "algo-fft",
+      "size": 12000,
+      "class": "5-smooth",
+      "nsOp": 1449347,
+      "mbPerSec": 66.24,
+      "bytesPerOp": 2,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny32",
+      "library": "algo-fft",
+      "size": 12289,
+      "class": "prime (smooth p-1)",
+      "nsOp": 34282847,
+      "mbPerSec": 2.87,
+      "bytesPerOp": 11,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny32",
+      "library": "algo-fft",
+      "size": 44100,
+      "class": "practical",
+      "nsOp": 18991460,
+      "mbPerSec": 18.58,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "IFFT",
+      "library": "algo-fft",
+      "size": 8,
+      "class": "pow2",
+      "nsOp": 58.62,
+      "mbPerSec": 2183.71,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "IFFT",
+      "library": "go-dsp-fft",
+      "size": 8,
+      "class": "pow2",
+      "nsOp": 77070,
+      "mbPerSec": 1.66,
+      "bytesPerOp": 858,
+      "allocsPerOp": 18
+    },
+    {
+      "benchType": "IFFT",
+      "library": "go-fftw",
+      "size": 8,
+      "class": "pow2",
+      "nsOp": 118.8,
+      "mbPerSec": 1077.45,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "IFFT",
+      "library": "gonum",
+      "size": 8,
+      "class": "pow2",
+      "nsOp": 1084,
+      "mbPerSec": 118.06,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "IFFT",
+      "library": "takatoh",
+      "size": 8,
+      "class": "pow2",
+      "nsOp": 4465,
+      "mbPerSec": 28.67,
+      "bytesPerOp": 256,
+      "allocsPerOp": 2
+    },
+    {
+      "benchType": "IFFT",
+      "library": "algo-fft",
+      "size": 16,
+      "class": "pow2",
+      "nsOp": 1124,
+      "mbPerSec": 227.73,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "IFFT",
+      "library": "go-dsp-fft",
+      "size": 16,
+      "class": "pow2",
+      "nsOp": 118412,
+      "mbPerSec": 2.16,
+      "bytesPerOp": 1433,
+      "allocsPerOp": 26
+    },
+    {
+      "benchType": "IFFT",
+      "library": "go-fftw",
+      "size": 16,
+      "class": "pow2",
+      "nsOp": 722.5,
+      "mbPerSec": 354.34,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "IFFT",
+      "library": "gonum",
+      "size": 16,
+      "class": "pow2",
+      "nsOp": 15121,
+      "mbPerSec": 16.93,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "IFFT",
+      "library": "takatoh",
+      "size": 16,
+      "class": "pow2",
+      "nsOp": 10444,
+      "mbPerSec": 24.51,
+      "bytesPerOp": 512,
+      "allocsPerOp": 2
+    },
+    {
+      "benchType": "IFFT",
+      "library": "algo-fft",
+      "size": 32,
+      "class": "pow2",
+      "nsOp": 2304,
+      "mbPerSec": 222.24,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "IFFT",
+      "library": "go-dsp-fft",
+      "size": 32,
+      "class": "pow2",
+      "nsOp": 276351,
+      "mbPerSec": 1.85,
+      "bytesPerOp": 2585,
+      "allocsPerOp": 42
+    },
+    {
+      "benchType": "IFFT",
+      "library": "go-fftw",
+      "size": 32,
+      "class": "pow2",
+      "nsOp": 2202,
+      "mbPerSec": 232.49,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "IFFT",
+      "library": "gonum",
+      "size": 32,
+      "class": "pow2",
+      "nsOp": 28257,
+      "mbPerSec": 18.12,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "IFFT",
+      "library": "takatoh",
+      "size": 32,
+      "class": "pow2",
+      "nsOp": 36144,
+      "mbPerSec": 14.17,
+      "bytesPerOp": 1024,
+      "allocsPerOp": 2
+    },
+    {
+      "benchType": "IFFT",
+      "library": "algo-fft",
+      "size": 64,
+      "class": "pow2",
+      "nsOp": 7385,
+      "mbPerSec": 138.67,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "IFFT",
+      "library": "go-dsp-fft",
+      "size": 64,
+      "class": "pow2",
+      "nsOp": 220746,
+      "mbPerSec": 4.64,
+      "bytesPerOp": 4428,
+      "allocsPerOp": 45
+    },
+    {
+      "benchType": "IFFT",
+      "library": "go-fftw",
+      "size": 64,
+      "class": "pow2",
+      "nsOp": 2833,
+      "mbPerSec": 361.39,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "IFFT",
+      "library": "gonum",
+      "size": 64,
+      "class": "pow2",
+      "nsOp": 58929,
+      "mbPerSec": 17.38,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "IFFT",
+      "library": "takatoh",
+      "size": 64,
+      "class": "pow2",
+      "nsOp": 61413,
+      "mbPerSec": 16.67,
+      "bytesPerOp": 2048,
+      "allocsPerOp": 2
+    },
+    {
+      "benchType": "IFFT",
+      "library": "algo-fft",
+      "size": 128,
+      "class": "pow2",
+      "nsOp": 870.4,
+      "mbPerSec": 2352.93,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "IFFT",
+      "library": "go-dsp-fft",
+      "size": 128,
+      "class": "pow2",
+      "nsOp": 28328,
+      "mbPerSec": 72.3,
+      "bytesPerOp": 8320,
+      "allocsPerOp": 56
+    },
+    {
+      "benchType": "IFFT",
+      "library": "go-fftw",
+      "size": 128,
+      "class": "pow2",
+      "nsOp": 148.3,
+      "mbPerSec": 13810.45,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "IFFT",
+      "library": "gonum",
+      "size": 128,
+      "class": "pow2",
+      "nsOp": 2328,
+      "mbPerSec": 879.68,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "IFFT",
+      "library": "takatoh",
+      "size": 128,
+      "class": "pow2",
+      "nsOp": 26068,
+      "mbPerSec": 78.56,
+      "bytesPerOp": 4096,
+      "allocsPerOp": 2
+    },
+    {
+      "benchType": "IFFT",
+      "library": "algo-fft",
+      "size": 256,
+      "class": "pow2",
+      "nsOp": 1521,
+      "mbPerSec": 2692.13,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "IFFT",
+      "library": "go-dsp-fft",
+      "size": 256,
+      "class": "pow2",
+      "nsOp": 31470,
+      "mbPerSec": 130.15,
+      "bytesPerOp": 15792,
+      "allocsPerOp": 67
+    },
+    {
+      "benchType": "IFFT",
+      "library": "go-fftw",
+      "size": 256,
+      "class": "pow2",
+      "nsOp": 558.1,
+      "mbPerSec": 7339.38,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "IFFT",
+      "library": "gonum",
+      "size": 256,
+      "class": "pow2",
+      "nsOp": 10783,
+      "mbPerSec": 379.86,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "IFFT",
+      "library": "takatoh",
+      "size": 256,
+      "class": "pow2",
+      "nsOp": 23573,
+      "mbPerSec": 173.76,
+      "bytesPerOp": 8192,
+      "allocsPerOp": 2
+    },
+    {
+      "benchType": "IFFT",
+      "library": "algo-fft",
+      "size": 512,
+      "class": "pow2",
+      "nsOp": 3885,
+      "mbPerSec": 2108.43,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "IFFT",
+      "library": "go-dsp-fft",
+      "size": 512,
+      "class": "pow2",
+      "nsOp": 48122,
+      "mbPerSec": 170.23,
+      "bytesPerOp": 30834,
+      "allocsPerOp": 79
+    },
+    {
+      "benchType": "IFFT",
+      "library": "go-fftw",
+      "size": 512,
+      "class": "pow2",
+      "nsOp": 1493,
+      "mbPerSec": 5486.06,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "IFFT",
+      "library": "gonum",
+      "size": 512,
+      "class": "pow2",
+      "nsOp": 17598,
+      "mbPerSec": 465.5,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "IFFT",
+      "library": "takatoh",
+      "size": 512,
+      "class": "pow2",
+      "nsOp": 40661,
+      "mbPerSec": 201.47,
+      "bytesPerOp": 16384,
+      "allocsPerOp": 2
+    },
+    {
+      "benchType": "IFFT",
+      "library": "algo-fft",
+      "size": 1024,
+      "class": "pow2",
+      "nsOp": 7323,
+      "mbPerSec": 2237.25,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "IFFT",
+      "library": "go-dsp-fft",
+      "size": 1024,
+      "class": "pow2",
+      "nsOp": 68137,
+      "mbPerSec": 240.46,
+      "bytesPerOp": 60181,
+      "allocsPerOp": 89
+    },
+    {
+      "benchType": "IFFT",
+      "library": "go-fftw",
+      "size": 1024,
+      "class": "pow2",
+      "nsOp": 1680,
+      "mbPerSec": 9753.06,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "IFFT",
+      "library": "gonum",
+      "size": 1024,
+      "class": "pow2",
+      "nsOp": 37712,
+      "mbPerSec": 434.45,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "IFFT",
+      "library": "takatoh",
+      "size": 1024,
+      "class": "pow2",
+      "nsOp": 93022,
+      "mbPerSec": 176.13,
+      "bytesPerOp": 32768,
+      "allocsPerOp": 2
+    },
+    {
+      "benchType": "IFFT",
+      "library": "algo-fft",
+      "size": 2048,
+      "class": "pow2",
+      "nsOp": 16553,
+      "mbPerSec": 1979.59,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "IFFT",
+      "library": "go-dsp-fft",
+      "size": 2048,
+      "class": "pow2",
+      "nsOp": 129673,
+      "mbPerSec": 252.7,
+      "bytesPerOp": 118487,
+      "allocsPerOp": 101
+    },
+    {
+      "benchType": "IFFT",
+      "library": "go-fftw",
+      "size": 2048,
+      "class": "pow2",
+      "nsOp": 5530,
+      "mbPerSec": 5925.91,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "IFFT",
+      "library": "gonum",
+      "size": 2048,
+      "class": "pow2",
+      "nsOp": 137090,
+      "mbPerSec": 239.03,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "IFFT",
+      "library": "takatoh",
+      "size": 2048,
+      "class": "pow2",
+      "nsOp": 224301,
+      "mbPerSec": 146.09,
+      "bytesPerOp": 65536,
+      "allocsPerOp": 2
+    },
+    {
+      "benchType": "IFFT",
+      "library": "algo-fft",
+      "size": 4096,
+      "class": "pow2",
+      "nsOp": 41263,
+      "mbPerSec": 1588.26,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "IFFT",
+      "library": "go-dsp-fft",
+      "size": 4096,
+      "class": "pow2",
+      "nsOp": 302324,
+      "mbPerSec": 216.77,
+      "bytesPerOp": 231319,
+      "allocsPerOp": 113
+    },
+    {
+      "benchType": "IFFT",
+      "library": "go-fftw",
+      "size": 4096,
+      "class": "pow2",
+      "nsOp": 11188,
+      "mbPerSec": 5857.92,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "IFFT",
+      "library": "gonum",
+      "size": 4096,
+      "class": "pow2",
+      "nsOp": 132774,
+      "mbPerSec": 493.59,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "IFFT",
+      "library": "takatoh",
+      "size": 4096,
+      "class": "pow2",
+      "nsOp": 462928,
+      "mbPerSec": 141.57,
+      "bytesPerOp": 131072,
+      "allocsPerOp": 2
+    },
+    {
+      "benchType": "IFFT",
+      "library": "algo-fft",
+      "size": 8192,
+      "class": "pow2",
+      "nsOp": 82693,
+      "mbPerSec": 1585.03,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "IFFT",
+      "library": "go-dsp-fft",
+      "size": 8192,
+      "class": "pow2",
+      "nsOp": 732065,
+      "mbPerSec": 179.04,
+      "bytesPerOp": 460898,
+      "allocsPerOp": 125
+    },
+    {
+      "benchType": "IFFT",
+      "library": "go-fftw",
+      "size": 8192,
+      "class": "pow2",
+      "nsOp": 28186,
+      "mbPerSec": 4650.19,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "IFFT",
+      "library": "gonum",
+      "size": 8192,
+      "class": "pow2",
+      "nsOp": 1374166,
+      "mbPerSec": 95.38,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "IFFT",
+      "library": "takatoh",
+      "size": 8192,
+      "class": "pow2",
+      "nsOp": 2707086,
+      "mbPerSec": 48.42,
+      "bytesPerOp": 262144,
+      "allocsPerOp": 2
+    },
+    {
+      "benchType": "IFFT",
+      "library": "algo-fft",
+      "size": 16384,
+      "class": "pow2",
+      "nsOp": 678010,
+      "mbPerSec": 386.64,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "IFFT",
+      "library": "go-dsp-fft",
+      "size": 16384,
+      "class": "pow2",
+      "nsOp": 2593426,
+      "mbPerSec": 101.08,
+      "bytesPerOp": 919791,
+      "allocsPerOp": 133
+    },
+    {
+      "benchType": "IFFT",
+      "library": "go-fftw",
+      "size": 16384,
+      "class": "pow2",
+      "nsOp": 231642,
+      "mbPerSec": 1131.68,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "IFFT",
+      "library": "gonum",
+      "size": 16384,
+      "class": "pow2",
+      "nsOp": 5606962,
+      "mbPerSec": 46.75,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "IFFT",
+      "library": "takatoh",
+      "size": 16384,
+      "class": "pow2",
+      "nsOp": 5955212,
+      "mbPerSec": 44.02,
+      "bytesPerOp": 524289,
+      "allocsPerOp": 2
+    },
+    {
+      "benchType": "IFFT",
+      "library": "algo-fft",
+      "size": 32768,
+      "class": "pow2",
+      "nsOp": 1558212,
+      "mbPerSec": 336.47,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "IFFT",
+      "library": "go-dsp-fft",
+      "size": 32768,
+      "class": "pow2",
+      "nsOp": 4107359,
+      "mbPerSec": 127.65,
+      "bytesPerOp": 1837504,
+      "allocsPerOp": 145
+    },
+    {
+      "benchType": "IFFT",
+      "library": "go-fftw",
+      "size": 32768,
+      "class": "pow2",
+      "nsOp": 547344,
+      "mbPerSec": 957.88,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "IFFT",
+      "library": "gonum",
+      "size": 32768,
+      "class": "pow2",
+      "nsOp": 13176617,
+      "mbPerSec": 39.79,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "IFFT",
+      "library": "takatoh",
+      "size": 32768,
+      "class": "pow2",
+      "nsOp": 13896862,
+      "mbPerSec": 37.73,
+      "bytesPerOp": 1048577,
+      "allocsPerOp": 2
+    },
+    {
+      "benchType": "IFFT32",
+      "library": "algo-fft",
+      "size": 8,
+      "class": "pow2",
+      "nsOp": 274.8,
+      "mbPerSec": 232.85,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "IFFT32",
+      "library": "algo-fft",
+      "size": 16,
+      "class": "pow2",
+      "nsOp": 869.8,
+      "mbPerSec": 147.15,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "IFFT32",
+      "library": "algo-fft",
+      "size": 32,
+      "class": "pow2",
+      "nsOp": 2121,
+      "mbPerSec": 120.72,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "IFFT32",
+      "library": "algo-fft",
+      "size": 64,
+      "class": "pow2",
+      "nsOp": 4249,
+      "mbPerSec": 120.5,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "IFFT32",
+      "library": "algo-fft",
+      "size": 128,
+      "class": "pow2",
+      "nsOp": 9820,
+      "mbPerSec": 104.28,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "IFFT32",
+      "library": "algo-fft",
+      "size": 256,
+      "class": "pow2",
+      "nsOp": 24674,
+      "mbPerSec": 83,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "IFFT32",
+      "library": "algo-fft",
+      "size": 512,
+      "class": "pow2",
+      "nsOp": 53322,
+      "mbPerSec": 76.82,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "IFFT32",
+      "library": "algo-fft",
+      "size": 1024,
+      "class": "pow2",
+      "nsOp": 109123,
+      "mbPerSec": 75.07,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "IFFT32",
+      "library": "algo-fft",
+      "size": 2048,
+      "class": "pow2",
+      "nsOp": 275724,
+      "mbPerSec": 59.42,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "IFFT32",
+      "library": "algo-fft",
+      "size": 4096,
+      "class": "pow2",
+      "nsOp": 1010813,
+      "mbPerSec": 32.42,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "IFFT32",
+      "library": "algo-fft",
+      "size": 8192,
+      "class": "pow2",
+      "nsOp": 2791172,
+      "mbPerSec": 23.48,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "IFFT32",
+      "library": "algo-fft",
+      "size": 16384,
+      "class": "pow2",
+      "nsOp": 5619896,
+      "mbPerSec": 23.32,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "IFFT32",
+      "library": "algo-fft",
+      "size": 32768,
+      "class": "pow2",
+      "nsOp": 16168419,
+      "mbPerSec": 16.21,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    }
+  ],
+  "planInfos": [
+    {
+      "n": 8,
+      "class": "pow2",
+      "strategy": "DIT",
+      "algorithm": "dit8_radix8_generic",
+      "strategy32": "DIT",
+      "algorithm32": "dit8_radix8_generic"
+    },
+    {
+      "n": 16,
+      "class": "pow2",
+      "strategy": "DIT",
+      "algorithm": "dit16_radix16_generic",
+      "strategy32": "DIT",
+      "algorithm32": "dit16_radix16_generic"
+    },
+    {
+      "n": 32,
+      "class": "pow2",
+      "strategy": "DIT",
+      "algorithm": "dit32_radix4_then2_generic",
+      "strategy32": "DIT",
+      "algorithm32": "dit32_radix4_then2_generic"
+    },
+    {
+      "n": 64,
+      "class": "pow2",
+      "strategy": "DIT",
+      "algorithm": "dit64_radix4_generic",
+      "strategy32": "DIT",
+      "algorithm32": "dit64_radix4_generic"
+    },
+    {
+      "n": 96,
+      "class": "5-smooth",
+      "strategy": "DIT",
+      "algorithm": "dit_fallback",
+      "strategy32": "DIT",
+      "algorithm32": "dit_fallback"
+    },
+    {
+      "n": 97,
+      "class": "prime (smooth p-1)",
+      "strategy": "Bluestein",
+      "algorithm": "rader",
+      "strategy32": "Bluestein",
+      "algorithm32": "rader"
+    },
+    {
+      "n": 128,
+      "class": "pow2",
+      "strategy": "DIT",
+      "algorithm": "dit128_radix4_then2_generic",
+      "strategy32": "DIT",
+      "algorithm32": "dit128_radix4_then2_generic"
+    },
+    {
+      "n": 256,
+      "class": "pow2",
+      "strategy": "DIT",
+      "algorithm": "dit256_radix4_generic",
+      "strategy32": "DIT",
+      "algorithm32": "dit256_radix16_generic"
+    },
+    {
+      "n": 257,
+      "class": "prime (smooth p-1)",
+      "strategy": "Bluestein",
+      "algorithm": "rader",
+      "strategy32": "Bluestein",
+      "algorithm32": "rader"
+    },
+    {
+      "n": 448,
+      "class": "7/11-smooth",
+      "strategy": "DIT",
+      "algorithm": "dit_fallback",
+      "strategy32": "DIT",
+      "algorithm32": "dit_fallback"
+    },
+    {
+      "n": 480,
+      "class": "5-smooth",
+      "strategy": "DIT",
+      "algorithm": "dit_fallback",
+      "strategy32": "DIT",
+      "algorithm32": "dit_fallback"
+    },
+    {
+      "n": 512,
+      "class": "pow2",
+      "strategy": "DIT",
+      "algorithm": "dit512_radix4_then2_generic",
+      "strategy32": "DIT",
+      "algorithm32": "dit512_radix4_then2_generic"
+    },
+    {
+      "n": 641,
+      "class": "prime (smooth p-1)",
+      "strategy": "Bluestein",
+      "algorithm": "rader",
+      "strategy32": "Bluestein",
+      "algorithm32": "rader"
+    },
+    {
+      "n": 704,
+      "class": "7/11-smooth",
+      "strategy": "DIT",
+      "algorithm": "dit_fallback",
+      "strategy32": "DIT",
+      "algorithm32": "dit_fallback"
+    },
+    {
+      "n": 768,
+      "class": "5-smooth",
+      "strategy": "DIT",
+      "algorithm": "dit_fallback",
+      "strategy32": "DIT",
+      "algorithm32": "dit_fallback"
+    },
+    {
+      "n": 1000,
+      "class": "practical",
+      "strategy": "DIT",
+      "algorithm": "dit_fallback",
+      "strategy32": "DIT",
+      "algorithm32": "dit_fallback"
+    },
+    {
+      "n": 1009,
+      "class": "prime (rough p-1)",
+      "strategy": "Bluestein",
+      "algorithm": "bluestein",
+      "strategy32": "Bluestein",
+      "algorithm32": "bluestein"
+    },
+    {
+      "n": 1024,
+      "class": "pow2",
+      "strategy": "DIT",
+      "algorithm": "dit1024_radix4_generic",
+      "strategy32": "DIT",
+      "algorithm32": "dit1024_radix4_generic"
+    },
+    {
+      "n": 1152,
+      "class": "5-smooth",
+      "strategy": "Stockham",
+      "algorithm": "stockham",
+      "strategy32": "Stockham",
+      "algorithm32": "stockham"
+    },
+    {
+      "n": 1153,
+      "class": "prime (smooth p-1)",
+      "strategy": "Bluestein",
+      "algorithm": "rader",
+      "strategy32": "Bluestein",
+      "algorithm32": "rader"
+    },
+    {
+      "n": 1344,
+      "class": "7/11-smooth",
+      "strategy": "Stockham",
+      "algorithm": "stockham",
+      "strategy32": "Stockham",
+      "algorithm32": "stockham"
+    },
+    {
+      "n": 1920,
+      "class": "5-smooth",
+      "strategy": "Stockham",
+      "algorithm": "stockham",
+      "strategy32": "Stockham",
+      "algorithm32": "stockham"
+    },
+    {
+      "n": 2003,
+      "class": "prime (rough p-1)",
+      "strategy": "Bluestein",
+      "algorithm": "bluestein",
+      "strategy32": "Bluestein",
+      "algorithm32": "bluestein"
+    },
+    {
+      "n": 2016,
+      "class": "7/11-smooth",
+      "strategy": "Stockham",
+      "algorithm": "stockham",
+      "strategy32": "Stockham",
+      "algorithm32": "stockham"
+    },
+    {
+      "n": 2048,
+      "class": "pow2",
+      "strategy": "DIT",
+      "algorithm": "dit2048_radix4_then2_generic",
+      "strategy32": "DIT",
+      "algorithm32": "dit2048_radix4_then2_generic"
+    },
+    {
+      "n": 2205,
+      "class": "practical",
+      "strategy": "Stockham",
+      "algorithm": "stockham",
+      "strategy32": "Stockham",
+      "algorithm32": "stockham"
+    },
+    {
+      "n": 3600,
+      "class": "practical",
+      "strategy": "Stockham",
+      "algorithm": "stockham",
+      "strategy32": "Stockham",
+      "algorithm32": "stockham"
+    },
+    {
+      "n": 4001,
+      "class": "prime (smooth p-1)",
+      "strategy": "Bluestein",
+      "algorithm": "rader",
+      "strategy32": "Bluestein",
+      "algorithm32": "rader"
+    },
+    {
+      "n": 4096,
+      "class": "pow2",
+      "strategy": "DIT",
+      "algorithm": "dit4096_radix4_generic",
+      "strategy32": "DIT",
+      "algorithm32": "dit4096_radix4_generic"
+    },
+    {
+      "n": 8192,
+      "class": "pow2",
+      "strategy": "DIT",
+      "algorithm": "dit8192_radix4_then2_generic",
+      "strategy32": "DIT",
+      "algorithm32": "dit8192_radix4_then2_generic"
+    },
+    {
+      "n": 9973,
+      "class": "prime (rough p-1)",
+      "strategy": "Bluestein",
+      "algorithm": "bluestein",
+      "strategy32": "Bluestein",
+      "algorithm32": "bluestein"
+    },
+    {
+      "n": 12000,
+      "class": "5-smooth",
+      "strategy": "Stockham",
+      "algorithm": "stockham",
+      "strategy32": "Stockham",
+      "algorithm32": "stockham"
+    },
+    {
+      "n": 12289,
+      "class": "prime (smooth p-1)",
+      "strategy": "Bluestein",
+      "algorithm": "rader",
+      "strategy32": "Bluestein",
+      "algorithm32": "rader"
+    },
+    {
+      "n": 16384,
+      "class": "pow2",
+      "strategy": "DIT",
+      "algorithm": "dit16384_radix4_generic",
+      "strategy32": "DIT",
+      "algorithm32": "dit16384_radix4_generic"
+    },
+    {
+      "n": 32768,
+      "class": "pow2",
+      "strategy": "DIT",
+      "algorithm": "dit32768_radix4_then2_generic",
+      "strategy32": "DIT",
+      "algorithm32": "dit32768_radix4_then2_generic"
+    },
+    {
+      "n": 44100,
+      "class": "practical",
+      "strategy": "Bluestein",
+      "algorithm": "bluestein",
+      "strategy32": "Bluestein",
+      "algorithm32": "bluestein"
+    }
+  ]
+}

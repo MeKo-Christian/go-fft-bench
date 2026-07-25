@@ -86,6 +86,27 @@ func newFigure(w, h int, dpi float64) (*core.Figure, *core.Axes) {
 	return fig, ax
 }
 
+// logLimits sets a logarithmic y range that contains every value with a
+// little margin, so nothing is silently autoscaled off the chart.
+func logLimits(ax *core.Axes, values []float64) {
+	min, max := 0.0, 0.0
+	for _, v := range values {
+		if v <= 0 {
+			continue
+		}
+		if min == 0 || v < min {
+			min = v
+		}
+		if v > max {
+			max = v
+		}
+	}
+	if min == 0 || max == 0 {
+		return
+	}
+	ax.SetYLim(min/1.8, max*1.8)
+}
+
 // headroom sets a linear y range from zero with space above the tallest bar
 // for the legend. Bar charts must not use a log axis: a bar runs from the
 // baseline, and log(0) is not a coordinate — the renderer fills the whole
@@ -227,6 +248,7 @@ func plotSpeedupVsFFTW(run *Run, path string, dpi float64) error {
 		axisXs = append(axisXs, float64(n))
 	}
 
+	var allRatios []float64
 	for _, lib := range run.Libraries("FFT") {
 		if lib == "go-fftw" {
 			continue
@@ -244,6 +266,7 @@ func plotSpeedupVsFFTW(run *Run, path string, dpi float64) error {
 		if len(xs) == 0 {
 			continue
 		}
+		allRatios = append(allRatios, ys...)
 		if err := plotLine(ax, lib, xs, ys, lib); err != nil {
 			return err
 		}
@@ -259,6 +282,9 @@ func plotSpeedupVsFFTW(run *Run, path string, dpi float64) error {
 	if err := ax.SetYScale("log", transform.WithScaleBase(10)); err != nil {
 		return err
 	}
+	// Autoscaling clips the slowest libraries off the bottom of a log axis,
+	// which would quietly hide exactly the comparison the chart is for.
+	logLimits(ax, append(allRatios, 1.0))
 	ax.SetTitle("Speed relative to FFTW3, complex128 forward FFT")
 	ax.SetXLabel("transform length n")
 	ax.SetYLabel("speedup vs FFTW3  (>1 is faster)")
@@ -438,7 +464,7 @@ func plotNonPow2Detail(run *Run, path string, dpi float64) error {
 	for _, e := range entries {
 		speedups = append(speedups, e.speedup)
 	}
-	headroom(ax, append(speedups, 1.0), 1.30)
+	headroom(ax, append(speedups, 1.0), 1.42)
 	_ = ax.TickParams(core.TickParams{Which: "major", LabelSize: f64(7.5)})
 	ax.SetTitle("Every non-power-of-two length measured, algo-fft vs FFTW3")
 	ax.SetXLabel("transform length n, grouped by class")
