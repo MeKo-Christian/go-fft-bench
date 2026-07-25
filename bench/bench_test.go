@@ -3,8 +3,6 @@ package bench
 import (
 	"fmt"
 	"math"
-	"os"
-	"strconv"
 	"testing"
 
 	algofft "github.com/cwbudde/algo-fft"
@@ -422,20 +420,10 @@ func checkAccuracy(t *testing.T, name string, original, result []complex128, n i
 	}
 }
 
+// benchSizes returns the power-of-two sizes, honouring FFT_BENCH_MAX. The
+// table itself lives in sizes.go so the runner and plotting tools share it.
 func benchSizes() []int {
-	maxSize := 8192
-	if value := os.Getenv("FFT_BENCH_MAX"); value != "" {
-		parsed, err := strconv.Atoi(value)
-		if err == nil && parsed > 0 {
-			maxSize = parsed
-		}
-	}
-
-	sizes := make([]int, 0, 14)
-	for n := 8; n <= maxSize; n *= 2 {
-		sizes = append(sizes, n)
-	}
-	return sizes
+	return Pow2Sizes(MaxPow2())
 }
 
 func fillComplex128(dst []complex128) {

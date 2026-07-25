@@ -1,13 +1,33 @@
 # Repository Guidelines
 
 ## Project Structure & Module Organization
-- `bench/` holds the benchmark suite (`bench_test.go`). All benchmark logic lives here.
+- `bench/` holds the benchmark suite. `bench_test.go` covers powers of two,
+  `bench_any_test.go` covers non-power-of-two lengths plus the accuracy gate.
+  `sizes.go` and `planinfo.go` are non-test files: they export the size tables
+  and the algo-fft plan-route dump so the tools can share them.
 - `cmd/benchrunner/` contains the automated benchmark runner tool (Go CLI)
+- `cmd/fftplot/` renders charts from the runner's JSON via matplotlib-go.
+  **Build it with `-tags purego`** — matplotlib-go's default AGG backend needs
+  a vendored FreeType prefix that is not shipped in the module.
+- `scripts/sweep.sh` runs both builds (default and `-tags purego`) end to end.
+- `results/` holds the JSON the plotting tool reads; `plots/` the PNGs.
 - `bin/` contains built binaries (created by `just build`)
 - `go.mod` defines the module and benchmark dependencies.
-- `justfile` provides build recipes (`build`, `install`, `bench`, `test`, `clean`)
+- `justfile` provides recipes (`build`, `bench`, `sweep`, `plot`, `report`, …)
 - `README.md` documents benchmark scope and usage.
-- `BENCHMARKS.md` contains the latest benchmark results.
+- `BENCHMARKS.md` / `BENCHMARKS-purego.md` contain the latest results.
+
+## Benchmarking discipline
+- **Never benchmark on a loaded machine.** `benchrunner` refuses above a load
+  average of `NumCPU/4` (min 1.5) and will wait with `-wait-for-idle`. Do not
+  run builds, linters or test suites during a sweep — including in another
+  repository.
+- Libraries are interleaved per size on purpose, so thermal throttling on a
+  laptop biases every library at a size equally and the ratios survive.
+- `TestAnySizesAccuracy` must pass before any arbitrary-length numbers are
+  quoted; it cross-checks algo-fft, go-dsp and FFTW against gonum.
+- `algo-fft` is pinned to a released tag in `go.mod`. `matplotlib-go` uses a
+  local `replace` because the API used here is newer than its latest tag.
 
 ## Build, Test, and Development Commands
 
