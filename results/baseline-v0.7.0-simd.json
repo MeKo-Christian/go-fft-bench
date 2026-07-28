@@ -1,12 +1,12 @@
 {
   "meta": {
-    "label": "purego",
-    "tags": "purego",
+    "label": "simd",
+    "tags": "",
     "goamd64": "v3",
     "goVersion": "go1.26.1",
     "cpu": "12th Gen Intel(R) Core(TM) i7-1255U",
     "maxSize": 32768,
-    "algoFFTVersion": "v0.7.2"
+    "algoFFTVersion": "v0.7.0"
   },
   "results": [
     {
@@ -14,8 +14,8 @@
       "library": "algo-fft",
       "size": 8,
       "class": "pow2",
-      "nsOp": 10.23,
-      "mbPerSec": 12508.87,
+      "nsOp": 6.96,
+      "mbPerSec": 18390.45,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -24,9 +24,9 @@
       "library": "go-dsp-fft",
       "size": 8,
       "class": "pow2",
-      "nsOp": 4238,
-      "mbPerSec": 30.21,
-      "bytesPerOp": 738,
+      "nsOp": 4544,
+      "mbPerSec": 28.17,
+      "bytesPerOp": 739,
       "allocsPerOp": 17
     },
     {
@@ -34,8 +34,8 @@
       "library": "go-fftw",
       "size": 8,
       "class": "pow2",
-      "nsOp": 39.4,
-      "mbPerSec": 3248.95,
+      "nsOp": 37.61,
+      "mbPerSec": 3403.73,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -44,8 +44,8 @@
       "library": "gonum",
       "size": 8,
       "class": "pow2",
-      "nsOp": 105.8,
-      "mbPerSec": 1209.4,
+      "nsOp": 112.7,
+      "mbPerSec": 1136.11,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -54,8 +54,8 @@
       "library": "takatoh",
       "size": 8,
       "class": "pow2",
-      "nsOp": 184.1,
-      "mbPerSec": 695.11,
+      "nsOp": 205.3,
+      "mbPerSec": 623.44,
       "bytesPerOp": 128,
       "allocsPerOp": 1
     },
@@ -64,8 +64,8 @@
       "library": "algo-fft",
       "size": 16,
       "class": "pow2",
-      "nsOp": 42.2,
-      "mbPerSec": 6065.69,
+      "nsOp": 24.72,
+      "mbPerSec": 10357.5,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -74,8 +74,8 @@
       "library": "go-dsp-fft",
       "size": 16,
       "class": "pow2",
-      "nsOp": 5480,
-      "mbPerSec": 46.71,
+      "nsOp": 5462,
+      "mbPerSec": 46.87,
       "bytesPerOp": 1177,
       "allocsPerOp": 25
     },
@@ -84,8 +84,8 @@
       "library": "go-fftw",
       "size": 16,
       "class": "pow2",
-      "nsOp": 47.51,
-      "mbPerSec": 5388.47,
+      "nsOp": 41.39,
+      "mbPerSec": 6185.39,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -94,8 +94,8 @@
       "library": "gonum",
       "size": 16,
       "class": "pow2",
-      "nsOp": 178.3,
-      "mbPerSec": 1435.85,
+      "nsOp": 188.4,
+      "mbPerSec": 1358.7,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -104,8 +104,8 @@
       "library": "takatoh",
       "size": 16,
       "class": "pow2",
-      "nsOp": 470.5,
-      "mbPerSec": 544.12,
+      "nsOp": 509.3,
+      "mbPerSec": 502.69,
       "bytesPerOp": 256,
       "allocsPerOp": 1
     },
@@ -114,8 +114,8 @@
       "library": "algo-fft",
       "size": 32,
       "class": "pow2",
-      "nsOp": 92.16,
-      "mbPerSec": 5555.69,
+      "nsOp": 69.45,
+      "mbPerSec": 7372.04,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -124,9 +124,9 @@
       "library": "go-dsp-fft",
       "size": 32,
       "class": "pow2",
-      "nsOp": 7699,
-      "mbPerSec": 66.51,
-      "bytesPerOp": 2073,
+      "nsOp": 7711,
+      "mbPerSec": 66.4,
+      "bytesPerOp": 2074,
       "allocsPerOp": 41
     },
     {
@@ -134,8 +134,8 @@
       "library": "go-fftw",
       "size": 32,
       "class": "pow2",
-      "nsOp": 61.98,
-      "mbPerSec": 8261.14,
+      "nsOp": 65.94,
+      "mbPerSec": 7764.72,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -144,8 +144,8 @@
       "library": "gonum",
       "size": 32,
       "class": "pow2",
-      "nsOp": 480.2,
-      "mbPerSec": 1066.33,
+      "nsOp": 499.8,
+      "mbPerSec": 1024.43,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -154,8 +154,8 @@
       "library": "takatoh",
       "size": 32,
       "class": "pow2",
-      "nsOp": 1142,
-      "mbPerSec": 448.36,
+      "nsOp": 1645,
+      "mbPerSec": 311.22,
       "bytesPerOp": 512,
       "allocsPerOp": 1
     },
@@ -164,8 +164,8 @@
       "library": "algo-fft",
       "size": 64,
       "class": "pow2",
-      "nsOp": 167.5,
-      "mbPerSec": 6112.7,
+      "nsOp": 229.4,
+      "mbPerSec": 4463.01,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -174,9 +174,9 @@
       "library": "go-dsp-fft",
       "size": 64,
       "class": "pow2",
-      "nsOp": 9265,
-      "mbPerSec": 110.52,
-      "bytesPerOp": 3402,
+      "nsOp": 9255,
+      "mbPerSec": 110.64,
+      "bytesPerOp": 3403,
       "allocsPerOp": 44
     },
     {
@@ -184,8 +184,8 @@
       "library": "go-fftw",
       "size": 64,
       "class": "pow2",
-      "nsOp": 80.31,
-      "mbPerSec": 12749.86,
+      "nsOp": 98.26,
+      "mbPerSec": 10421.69,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -194,8 +194,8 @@
       "library": "gonum",
       "size": 64,
       "class": "pow2",
-      "nsOp": 933.2,
-      "mbPerSec": 1097.26,
+      "nsOp": 935.8,
+      "mbPerSec": 1094.27,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -204,8 +204,8 @@
       "library": "takatoh",
       "size": 64,
       "class": "pow2",
-      "nsOp": 2828,
-      "mbPerSec": 362.04,
+      "nsOp": 2906,
+      "mbPerSec": 352.37,
       "bytesPerOp": 1024,
       "allocsPerOp": 1
     },
@@ -214,8 +214,8 @@
       "library": "algo-fft",
       "size": 128,
       "class": "pow2",
-      "nsOp": 391.8,
-      "mbPerSec": 5226.97,
+      "nsOp": 382.8,
+      "mbPerSec": 5349.66,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -224,9 +224,9 @@
       "library": "go-dsp-fft",
       "size": 128,
       "class": "pow2",
-      "nsOp": 12347,
-      "mbPerSec": 165.87,
-      "bytesPerOp": 6267,
+      "nsOp": 12841,
+      "mbPerSec": 159.49,
+      "bytesPerOp": 6268,
       "allocsPerOp": 55
     },
     {
@@ -234,8 +234,8 @@
       "library": "go-fftw",
       "size": 128,
       "class": "pow2",
-      "nsOp": 134,
-      "mbPerSec": 15288.12,
+      "nsOp": 164.4,
+      "mbPerSec": 12456.74,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -244,8 +244,8 @@
       "library": "gonum",
       "size": 128,
       "class": "pow2",
-      "nsOp": 2062,
-      "mbPerSec": 993.44,
+      "nsOp": 2355,
+      "mbPerSec": 869.78,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -254,8 +254,8 @@
       "library": "takatoh",
       "size": 128,
       "class": "pow2",
-      "nsOp": 6857,
-      "mbPerSec": 298.69,
+      "nsOp": 7203,
+      "mbPerSec": 284.32,
       "bytesPerOp": 2048,
       "allocsPerOp": 1
     },
@@ -264,8 +264,8 @@
       "library": "algo-fft",
       "size": 256,
       "class": "pow2",
-      "nsOp": 875.1,
-      "mbPerSec": 4680.45,
+      "nsOp": 726,
+      "mbPerSec": 5641.61,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -274,9 +274,9 @@
       "library": "go-dsp-fft",
       "size": 256,
       "class": "pow2",
-      "nsOp": 17797,
-      "mbPerSec": 230.15,
-      "bytesPerOp": 11693,
+      "nsOp": 17901,
+      "mbPerSec": 228.81,
+      "bytesPerOp": 11695,
       "allocsPerOp": 66
     },
     {
@@ -284,8 +284,8 @@
       "library": "go-fftw",
       "size": 256,
       "class": "pow2",
-      "nsOp": 275.7,
-      "mbPerSec": 14857.84,
+      "nsOp": 302.9,
+      "mbPerSec": 13522.05,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -294,8 +294,8 @@
       "library": "gonum",
       "size": 256,
       "class": "pow2",
-      "nsOp": 4623,
-      "mbPerSec": 885.98,
+      "nsOp": 5322,
+      "mbPerSec": 769.65,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -304,8 +304,8 @@
       "library": "takatoh",
       "size": 256,
       "class": "pow2",
-      "nsOp": 15545,
-      "mbPerSec": 263.49,
+      "nsOp": 15552,
+      "mbPerSec": 263.37,
       "bytesPerOp": 4096,
       "allocsPerOp": 1
     },
@@ -314,8 +314,8 @@
       "library": "algo-fft",
       "size": 512,
       "class": "pow2",
-      "nsOp": 2176,
-      "mbPerSec": 3764.66,
+      "nsOp": 1642,
+      "mbPerSec": 4988.64,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -324,8 +324,8 @@
       "library": "go-dsp-fft",
       "size": 512,
       "class": "pow2",
-      "nsOp": 27567,
-      "mbPerSec": 297.17,
+      "nsOp": 28089,
+      "mbPerSec": 291.64,
       "bytesPerOp": 22640,
       "allocsPerOp": 78
     },
@@ -334,8 +334,8 @@
       "library": "go-fftw",
       "size": 512,
       "class": "pow2",
-      "nsOp": 556.1,
-      "mbPerSec": 14731.89,
+      "nsOp": 586.8,
+      "mbPerSec": 13959.66,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -344,8 +344,8 @@
       "library": "gonum",
       "size": 512,
       "class": "pow2",
-      "nsOp": 11148,
-      "mbPerSec": 734.85,
+      "nsOp": 11106,
+      "mbPerSec": 737.63,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -354,8 +354,8 @@
       "library": "takatoh",
       "size": 512,
       "class": "pow2",
-      "nsOp": 33580,
-      "mbPerSec": 243.96,
+      "nsOp": 33796,
+      "mbPerSec": 242.39,
       "bytesPerOp": 8192,
       "allocsPerOp": 1
     },
@@ -364,8 +364,8 @@
       "library": "algo-fft",
       "size": 1024,
       "class": "pow2",
-      "nsOp": 4739,
-      "mbPerSec": 3457.57,
+      "nsOp": 3866,
+      "mbPerSec": 4238.14,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -374,9 +374,9 @@
       "library": "go-dsp-fft",
       "size": 1024,
       "class": "pow2",
-      "nsOp": 44980,
-      "mbPerSec": 364.25,
-      "bytesPerOp": 43795,
+      "nsOp": 46238,
+      "mbPerSec": 354.34,
+      "bytesPerOp": 43800,
       "allocsPerOp": 88
     },
     {
@@ -384,8 +384,8 @@
       "library": "go-fftw",
       "size": 1024,
       "class": "pow2",
-      "nsOp": 1317,
-      "mbPerSec": 12436.84,
+      "nsOp": 1365,
+      "mbPerSec": 11999.48,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -394,8 +394,8 @@
       "library": "gonum",
       "size": 1024,
       "class": "pow2",
-      "nsOp": 22686,
-      "mbPerSec": 722.22,
+      "nsOp": 22740,
+      "mbPerSec": 720.5,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -404,8 +404,8 @@
       "library": "takatoh",
       "size": 1024,
       "class": "pow2",
-      "nsOp": 73136,
-      "mbPerSec": 224.02,
+      "nsOp": 76043,
+      "mbPerSec": 215.46,
       "bytesPerOp": 16384,
       "allocsPerOp": 1
     },
@@ -414,8 +414,8 @@
       "library": "algo-fft",
       "size": 2048,
       "class": "pow2",
-      "nsOp": 11621,
-      "mbPerSec": 2819.84,
+      "nsOp": 10626,
+      "mbPerSec": 3083.81,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -424,8 +424,8 @@
       "library": "go-dsp-fft",
       "size": 2048,
       "class": "pow2",
-      "nsOp": 79849,
-      "mbPerSec": 410.38,
+      "nsOp": 83117,
+      "mbPerSec": 394.24,
       "bytesPerOp": 85720,
       "allocsPerOp": 100
     },
@@ -434,8 +434,8 @@
       "library": "go-fftw",
       "size": 2048,
       "class": "pow2",
-      "nsOp": 3070,
-      "mbPerSec": 10672.94,
+      "nsOp": 3100,
+      "mbPerSec": 10569.66,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -444,8 +444,8 @@
       "library": "gonum",
       "size": 2048,
       "class": "pow2",
-      "nsOp": 50846,
-      "mbPerSec": 644.45,
+      "nsOp": 54780,
+      "mbPerSec": 598.18,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -454,8 +454,8 @@
       "library": "takatoh",
       "size": 2048,
       "class": "pow2",
-      "nsOp": 160715,
-      "mbPerSec": 203.89,
+      "nsOp": 166764,
+      "mbPerSec": 196.49,
       "bytesPerOp": 32768,
       "allocsPerOp": 1
     },
@@ -464,8 +464,8 @@
       "library": "algo-fft",
       "size": 4096,
       "class": "pow2",
-      "nsOp": 31195,
-      "mbPerSec": 2100.88,
+      "nsOp": 23570,
+      "mbPerSec": 2780.48,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -474,9 +474,9 @@
       "library": "go-dsp-fft",
       "size": 4096,
       "class": "pow2",
-      "nsOp": 155619,
-      "mbPerSec": 421.13,
-      "bytesPerOp": 165789,
+      "nsOp": 158677,
+      "mbPerSec": 413.01,
+      "bytesPerOp": 165793,
       "allocsPerOp": 112
     },
     {
@@ -484,8 +484,8 @@
       "library": "go-fftw",
       "size": 4096,
       "class": "pow2",
-      "nsOp": 9836,
-      "mbPerSec": 6662.75,
+      "nsOp": 9302,
+      "mbPerSec": 7045.25,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -494,8 +494,8 @@
       "library": "gonum",
       "size": 4096,
       "class": "pow2",
-      "nsOp": 102138,
-      "mbPerSec": 641.64,
+      "nsOp": 110533,
+      "mbPerSec": 592.91,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -504,8 +504,8 @@
       "library": "takatoh",
       "size": 4096,
       "class": "pow2",
-      "nsOp": 350648,
-      "mbPerSec": 186.9,
+      "nsOp": 355548,
+      "mbPerSec": 184.32,
       "bytesPerOp": 65536,
       "allocsPerOp": 1
     },
@@ -514,8 +514,8 @@
       "library": "algo-fft",
       "size": 8192,
       "class": "pow2",
-      "nsOp": 59601,
-      "mbPerSec": 2199.14,
+      "nsOp": 51250,
+      "mbPerSec": 2557.5,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -524,9 +524,9 @@
       "library": "go-dsp-fft",
       "size": 8192,
       "class": "pow2",
-      "nsOp": 292259,
-      "mbPerSec": 448.48,
-      "bytesPerOp": 329828,
+      "nsOp": 290355,
+      "mbPerSec": 451.42,
+      "bytesPerOp": 329830,
       "allocsPerOp": 124
     },
     {
@@ -534,8 +534,8 @@
       "library": "go-fftw",
       "size": 8192,
       "class": "pow2",
-      "nsOp": 25057,
-      "mbPerSec": 5230.94,
+      "nsOp": 24224,
+      "mbPerSec": 5410.89,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -544,8 +544,8 @@
       "library": "gonum",
       "size": 8192,
       "class": "pow2",
-      "nsOp": 242313,
-      "mbPerSec": 540.92,
+      "nsOp": 264072,
+      "mbPerSec": 496.35,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -554,8 +554,8 @@
       "library": "takatoh",
       "size": 8192,
       "class": "pow2",
-      "nsOp": 786883,
-      "mbPerSec": 166.57,
+      "nsOp": 775869,
+      "mbPerSec": 168.94,
       "bytesPerOp": 131072,
       "allocsPerOp": 1
     },
@@ -564,8 +564,8 @@
       "library": "algo-fft",
       "size": 16384,
       "class": "pow2",
-      "nsOp": 148059,
-      "mbPerSec": 1770.53,
+      "nsOp": 109845,
+      "mbPerSec": 2386.49,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -574,9 +574,9 @@
       "library": "go-dsp-fft",
       "size": 16384,
       "class": "pow2",
-      "nsOp": 532181,
-      "mbPerSec": 492.58,
-      "bytesPerOp": 657638,
+      "nsOp": 539851,
+      "mbPerSec": 485.59,
+      "bytesPerOp": 657641,
       "allocsPerOp": 132
     },
     {
@@ -584,8 +584,8 @@
       "library": "go-fftw",
       "size": 16384,
       "class": "pow2",
-      "nsOp": 51661,
-      "mbPerSec": 5074.29,
+      "nsOp": 51564,
+      "mbPerSec": 5083.89,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -594,8 +594,8 @@
       "library": "gonum",
       "size": 16384,
       "class": "pow2",
-      "nsOp": 503907,
-      "mbPerSec": 520.22,
+      "nsOp": 515358,
+      "mbPerSec": 508.66,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -604,8 +604,8 @@
       "library": "takatoh",
       "size": 16384,
       "class": "pow2",
-      "nsOp": 1677845,
-      "mbPerSec": 156.24,
+      "nsOp": 1697893,
+      "mbPerSec": 154.39,
       "bytesPerOp": 262144,
       "allocsPerOp": 1
     },
@@ -614,8 +614,8 @@
       "library": "algo-fft",
       "size": 32768,
       "class": "pow2",
-      "nsOp": 253787,
-      "mbPerSec": 2065.86,
+      "nsOp": 239420,
+      "mbPerSec": 2189.83,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -624,9 +624,9 @@
       "library": "go-dsp-fft",
       "size": 32768,
       "class": "pow2",
-      "nsOp": 986382,
-      "mbPerSec": 531.53,
-      "bytesPerOp": 1313198,
+      "nsOp": 1014711,
+      "mbPerSec": 516.69,
+      "bytesPerOp": 1313206,
       "allocsPerOp": 144
     },
     {
@@ -634,8 +634,8 @@
       "library": "go-fftw",
       "size": 32768,
       "class": "pow2",
-      "nsOp": 113720,
-      "mbPerSec": 4610.35,
+      "nsOp": 116506,
+      "mbPerSec": 4500.11,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -644,8 +644,8 @@
       "library": "gonum",
       "size": 32768,
       "class": "pow2",
-      "nsOp": 1118942,
-      "mbPerSec": 468.56,
+      "nsOp": 1198561,
+      "mbPerSec": 437.43,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -654,8 +654,8 @@
       "library": "takatoh",
       "size": 32768,
       "class": "pow2",
-      "nsOp": 3612987,
-      "mbPerSec": 145.11,
+      "nsOp": 3628237,
+      "mbPerSec": 144.5,
       "bytesPerOp": 524288,
       "allocsPerOp": 1
     },
@@ -664,8 +664,8 @@
       "library": "algo-fft",
       "size": 8,
       "class": "pow2",
-      "nsOp": 10.13,
-      "mbPerSec": 6314.81,
+      "nsOp": 7.628,
+      "mbPerSec": 8389.65,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -674,8 +674,8 @@
       "library": "algo-fft",
       "size": 16,
       "class": "pow2",
-      "nsOp": 35.19,
-      "mbPerSec": 3637.87,
+      "nsOp": 12.23,
+      "mbPerSec": 10463.23,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -684,8 +684,8 @@
       "library": "algo-fft",
       "size": 32,
       "class": "pow2",
-      "nsOp": 93.06,
-      "mbPerSec": 2750.81,
+      "nsOp": 29.88,
+      "mbPerSec": 8567.08,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -694,8 +694,8 @@
       "library": "algo-fft",
       "size": 64,
       "class": "pow2",
-      "nsOp": 171.3,
-      "mbPerSec": 2989.63,
+      "nsOp": 118.6,
+      "mbPerSec": 4318.44,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -704,8 +704,8 @@
       "library": "algo-fft",
       "size": 128,
       "class": "pow2",
-      "nsOp": 424.7,
-      "mbPerSec": 2410.95,
+      "nsOp": 313.5,
+      "mbPerSec": 3266.79,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -714,8 +714,8 @@
       "library": "algo-fft",
       "size": 256,
       "class": "pow2",
-      "nsOp": 1437,
-      "mbPerSec": 1425.06,
+      "nsOp": 401.8,
+      "mbPerSec": 5096.6,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -724,8 +724,8 @@
       "library": "algo-fft",
       "size": 512,
       "class": "pow2",
-      "nsOp": 2736,
-      "mbPerSec": 1496.9,
+      "nsOp": 833.6,
+      "mbPerSec": 4913.89,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -734,8 +734,8 @@
       "library": "algo-fft",
       "size": 1024,
       "class": "pow2",
-      "nsOp": 5472,
-      "mbPerSec": 1497.06,
+      "nsOp": 3351,
+      "mbPerSec": 2444.72,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -744,8 +744,8 @@
       "library": "algo-fft",
       "size": 2048,
       "class": "pow2",
-      "nsOp": 11065,
-      "mbPerSec": 1480.71,
+      "nsOp": 6930,
+      "mbPerSec": 2364.37,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -754,8 +754,8 @@
       "library": "algo-fft",
       "size": 4096,
       "class": "pow2",
-      "nsOp": 28807,
-      "mbPerSec": 1137.5,
+      "nsOp": 16191,
+      "mbPerSec": 2023.86,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -764,8 +764,8 @@
       "library": "algo-fft",
       "size": 8192,
       "class": "pow2",
-      "nsOp": 60391,
-      "mbPerSec": 1085.19,
+      "nsOp": 34257,
+      "mbPerSec": 1913.09,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -774,8 +774,8 @@
       "library": "algo-fft",
       "size": 16384,
       "class": "pow2",
-      "nsOp": 150901,
-      "mbPerSec": 868.6,
+      "nsOp": 81649,
+      "mbPerSec": 1605.31,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -784,8 +784,8 @@
       "library": "algo-fft",
       "size": 32768,
       "class": "pow2",
-      "nsOp": 230570,
-      "mbPerSec": 1136.94,
+      "nsOp": 168499,
+      "mbPerSec": 1555.76,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -794,8 +794,8 @@
       "library": "algo-fft",
       "size": 96,
       "class": "5-smooth",
-      "nsOp": 1264,
-      "mbPerSec": 1215.09,
+      "nsOp": 946.1,
+      "mbPerSec": 1623.56,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -804,9 +804,9 @@
       "library": "go-dsp-fft",
       "size": 96,
       "class": "5-smooth",
-      "nsOp": 66056,
-      "mbPerSec": 23.25,
-      "bytesPerOp": 51510,
+      "nsOp": 64718,
+      "mbPerSec": 23.73,
+      "bytesPerOp": 51492,
       "allocsPerOp": 202
     },
     {
@@ -814,8 +814,8 @@
       "library": "go-fftw",
       "size": 96,
       "class": "5-smooth",
-      "nsOp": 106.7,
-      "mbPerSec": 14393.57,
+      "nsOp": 114.7,
+      "mbPerSec": 13392.68,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -824,8 +824,8 @@
       "library": "gonum",
       "size": 96,
       "class": "5-smooth",
-      "nsOp": 1715,
-      "mbPerSec": 895.42,
+      "nsOp": 1918,
+      "mbPerSec": 800.88,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -834,8 +834,8 @@
       "library": "algo-fft",
       "size": 97,
       "class": "prime (smooth p-1)",
-      "nsOp": 2825,
-      "mbPerSec": 549.48,
+      "nsOp": 2426,
+      "mbPerSec": 639.66,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -844,9 +844,9 @@
       "library": "go-dsp-fft",
       "size": 97,
       "class": "prime (smooth p-1)",
-      "nsOp": 62062,
-      "mbPerSec": 25.01,
-      "bytesPerOp": 51482,
+      "nsOp": 61524,
+      "mbPerSec": 25.23,
+      "bytesPerOp": 51487,
       "allocsPerOp": 202
     },
     {
@@ -854,8 +854,8 @@
       "library": "go-fftw",
       "size": 97,
       "class": "prime (smooth p-1)",
-      "nsOp": 1237,
-      "mbPerSec": 1254.68,
+      "nsOp": 1246,
+      "mbPerSec": 1246.02,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -864,8 +864,8 @@
       "library": "gonum",
       "size": 97,
       "class": "prime (smooth p-1)",
-      "nsOp": 10483,
-      "mbPerSec": 148.05,
+      "nsOp": 11378,
+      "mbPerSec": 136.4,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -874,8 +874,8 @@
       "library": "algo-fft",
       "size": 257,
       "class": "prime (smooth p-1)",
-      "nsOp": 4114,
-      "mbPerSec": 999.51,
+      "nsOp": 4184,
+      "mbPerSec": 982.78,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -884,8 +884,8 @@
       "library": "go-dsp-fft",
       "size": 257,
       "class": "prime (smooth p-1)",
-      "nsOp": 163659,
-      "mbPerSec": 25.13,
+      "nsOp": 168193,
+      "mbPerSec": 24.45,
       "bytesPerOp": 196961,
       "allocsPerOp": 268
     },
@@ -894,8 +894,8 @@
       "library": "go-fftw",
       "size": 257,
       "class": "prime (smooth p-1)",
-      "nsOp": 3366,
-      "mbPerSec": 1221.68,
+      "nsOp": 3431,
+      "mbPerSec": 1198.35,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -904,8 +904,8 @@
       "library": "gonum",
       "size": 257,
       "class": "prime (smooth p-1)",
-      "nsOp": 76141,
-      "mbPerSec": 54,
+      "nsOp": 79891,
+      "mbPerSec": 51.47,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -914,8 +914,8 @@
       "library": "algo-fft",
       "size": 448,
       "class": "7/11-smooth",
-      "nsOp": 7145,
-      "mbPerSec": 1003.24,
+      "nsOp": 6532,
+      "mbPerSec": 1097.35,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -924,9 +924,9 @@
       "library": "go-dsp-fft",
       "size": 448,
       "class": "7/11-smooth",
-      "nsOp": 173860,
-      "mbPerSec": 41.23,
-      "bytesPerOp": 196956,
+      "nsOp": 159400,
+      "mbPerSec": 44.97,
+      "bytesPerOp": 196950,
       "allocsPerOp": 268
     },
     {
@@ -934,8 +934,8 @@
       "library": "go-fftw",
       "size": 448,
       "class": "7/11-smooth",
-      "nsOp": 578.2,
-      "mbPerSec": 12397.2,
+      "nsOp": 608.6,
+      "mbPerSec": 11777.85,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -944,8 +944,8 @@
       "library": "gonum",
       "size": 448,
       "class": "7/11-smooth",
-      "nsOp": 11446,
-      "mbPerSec": 626.22,
+      "nsOp": 10868,
+      "mbPerSec": 659.57,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -954,8 +954,8 @@
       "library": "algo-fft",
       "size": 480,
       "class": "5-smooth",
-      "nsOp": 8021,
-      "mbPerSec": 957.54,
+      "nsOp": 5332,
+      "mbPerSec": 1440.41,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -964,9 +964,9 @@
       "library": "go-dsp-fft",
       "size": 480,
       "class": "5-smooth",
-      "nsOp": 179338,
-      "mbPerSec": 42.82,
-      "bytesPerOp": 196965,
+      "nsOp": 176736,
+      "mbPerSec": 43.45,
+      "bytesPerOp": 196978,
       "allocsPerOp": 268
     },
     {
@@ -974,8 +974,8 @@
       "library": "go-fftw",
       "size": 480,
       "class": "5-smooth",
-      "nsOp": 1142,
-      "mbPerSec": 6722.39,
+      "nsOp": 1140,
+      "mbPerSec": 6739.2,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -984,8 +984,8 @@
       "library": "gonum",
       "size": 480,
       "class": "5-smooth",
-      "nsOp": 11548,
-      "mbPerSec": 665.04,
+      "nsOp": 11703,
+      "mbPerSec": 656.26,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -994,8 +994,8 @@
       "library": "algo-fft",
       "size": 641,
       "class": "prime (smooth p-1)",
-      "nsOp": 21332,
-      "mbPerSec": 480.79,
+      "nsOp": 15662,
+      "mbPerSec": 654.84,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -1004,249 +1004,249 @@
       "library": "go-dsp-fft",
       "size": 641,
       "class": "prime (smooth p-1)",
-      "nsOp": 298814,
+      "nsOp": 287770,
+      "mbPerSec": 35.64,
+      "bytesPerOp": 388262,
+      "allocsPerOp": 304
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "go-fftw",
+      "size": 641,
+      "class": "prime (smooth p-1)",
+      "nsOp": 8968,
+      "mbPerSec": 1143.57,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "gonum",
+      "size": 641,
+      "class": "prime (smooth p-1)",
+      "nsOp": 454020,
+      "mbPerSec": 22.59,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "algo-fft",
+      "size": 704,
+      "class": "7/11-smooth",
+      "nsOp": 11889,
+      "mbPerSec": 947.45,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "go-dsp-fft",
+      "size": 704,
+      "class": "7/11-smooth",
+      "nsOp": 291744,
+      "mbPerSec": 38.61,
+      "bytesPerOp": 388271,
+      "allocsPerOp": 304
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "go-fftw",
+      "size": 704,
+      "class": "7/11-smooth",
+      "nsOp": 1449,
+      "mbPerSec": 7775.08,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "gonum",
+      "size": 704,
+      "class": "7/11-smooth",
+      "nsOp": 21582,
+      "mbPerSec": 521.91,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "algo-fft",
+      "size": 768,
+      "class": "5-smooth",
+      "nsOp": 5236,
+      "mbPerSec": 2346.61,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "go-dsp-fft",
+      "size": 768,
+      "class": "5-smooth",
+      "nsOp": 316039,
+      "mbPerSec": 38.88,
+      "bytesPerOp": 388267,
+      "allocsPerOp": 304
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "go-fftw",
+      "size": 768,
+      "class": "5-smooth",
+      "nsOp": 1239,
+      "mbPerSec": 9920.99,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "gonum",
+      "size": 768,
+      "class": "5-smooth",
+      "nsOp": 16748,
+      "mbPerSec": 733.69,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "algo-fft",
+      "size": 1000,
+      "class": "practical",
+      "nsOp": 24076,
+      "mbPerSec": 664.56,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "go-dsp-fft",
+      "size": 1000,
+      "class": "practical",
+      "nsOp": 280894,
+      "mbPerSec": 56.96,
+      "bytesPerOp": 388255,
+      "allocsPerOp": 304
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "go-fftw",
+      "size": 1000,
+      "class": "practical",
+      "nsOp": 2782,
+      "mbPerSec": 5750.7,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "gonum",
+      "size": 1000,
+      "class": "practical",
+      "nsOp": 24481,
+      "mbPerSec": 653.57,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "algo-fft",
+      "size": 1009,
+      "class": "prime (rough p-1)",
+      "nsOp": 33248,
+      "mbPerSec": 485.56,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "go-dsp-fft",
+      "size": 1009,
+      "class": "prime (rough p-1)",
+      "nsOp": 305955,
+      "mbPerSec": 52.77,
+      "bytesPerOp": 388262,
+      "allocsPerOp": 304
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "go-fftw",
+      "size": 1009,
+      "class": "prime (rough p-1)",
+      "nsOp": 17624,
+      "mbPerSec": 916.04,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "gonum",
+      "size": 1009,
+      "class": "prime (rough p-1)",
+      "nsOp": 1219204,
+      "mbPerSec": 13.24,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "algo-fft",
+      "size": 1152,
+      "class": "5-smooth",
+      "nsOp": 10429,
+      "mbPerSec": 1767.41,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "go-dsp-fft",
+      "size": 1152,
+      "class": "5-smooth",
+      "nsOp": 574997,
+      "mbPerSec": 32.06,
+      "bytesPerOp": 759557,
+      "allocsPerOp": 340
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "go-fftw",
+      "size": 1152,
+      "class": "5-smooth",
+      "nsOp": 3554,
+      "mbPerSec": 5186.27,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "gonum",
+      "size": 1152,
+      "class": "5-smooth",
+      "nsOp": 34440,
+      "mbPerSec": 535.19,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "algo-fft",
+      "size": 1153,
+      "class": "prime (smooth p-1)",
+      "nsOp": 28579,
+      "mbPerSec": 645.52,
+      "bytesPerOp": 0,
+      "allocsPerOp": 0
+    },
+    {
+      "benchType": "FFTAny",
+      "library": "go-dsp-fft",
+      "size": 1153,
+      "class": "prime (smooth p-1)",
+      "nsOp": 537562,
       "mbPerSec": 34.32,
-      "bytesPerOp": 388264,
-      "allocsPerOp": 304
-    },
-    {
-      "benchType": "FFTAny",
-      "library": "go-fftw",
-      "size": 641,
-      "class": "prime (smooth p-1)",
-      "nsOp": 8854,
-      "mbPerSec": 1158.32,
-      "bytesPerOp": 0,
-      "allocsPerOp": 0
-    },
-    {
-      "benchType": "FFTAny",
-      "library": "gonum",
-      "size": 641,
-      "class": "prime (smooth p-1)",
-      "nsOp": 452064,
-      "mbPerSec": 22.69,
-      "bytesPerOp": 0,
-      "allocsPerOp": 0
-    },
-    {
-      "benchType": "FFTAny",
-      "library": "algo-fft",
-      "size": 704,
-      "class": "7/11-smooth",
-      "nsOp": 13497,
-      "mbPerSec": 834.56,
-      "bytesPerOp": 0,
-      "allocsPerOp": 0
-    },
-    {
-      "benchType": "FFTAny",
-      "library": "go-dsp-fft",
-      "size": 704,
-      "class": "7/11-smooth",
-      "nsOp": 306467,
-      "mbPerSec": 36.75,
-      "bytesPerOp": 388264,
-      "allocsPerOp": 304
-    },
-    {
-      "benchType": "FFTAny",
-      "library": "go-fftw",
-      "size": 704,
-      "class": "7/11-smooth",
-      "nsOp": 1487,
-      "mbPerSec": 7574.35,
-      "bytesPerOp": 0,
-      "allocsPerOp": 0
-    },
-    {
-      "benchType": "FFTAny",
-      "library": "gonum",
-      "size": 704,
-      "class": "7/11-smooth",
-      "nsOp": 20280,
-      "mbPerSec": 555.42,
-      "bytesPerOp": 0,
-      "allocsPerOp": 0
-    },
-    {
-      "benchType": "FFTAny",
-      "library": "algo-fft",
-      "size": 768,
-      "class": "5-smooth",
-      "nsOp": 11720,
-      "mbPerSec": 1048.49,
-      "bytesPerOp": 0,
-      "allocsPerOp": 0
-    },
-    {
-      "benchType": "FFTAny",
-      "library": "go-dsp-fft",
-      "size": 768,
-      "class": "5-smooth",
-      "nsOp": 344868,
-      "mbPerSec": 35.63,
-      "bytesPerOp": 388273,
-      "allocsPerOp": 304
-    },
-    {
-      "benchType": "FFTAny",
-      "library": "go-fftw",
-      "size": 768,
-      "class": "5-smooth",
-      "nsOp": 1370,
-      "mbPerSec": 8971.75,
-      "bytesPerOp": 0,
-      "allocsPerOp": 0
-    },
-    {
-      "benchType": "FFTAny",
-      "library": "gonum",
-      "size": 768,
-      "class": "5-smooth",
-      "nsOp": 17797,
-      "mbPerSec": 690.46,
-      "bytesPerOp": 0,
-      "allocsPerOp": 0
-    },
-    {
-      "benchType": "FFTAny",
-      "library": "algo-fft",
-      "size": 1000,
-      "class": "practical",
-      "nsOp": 16819,
-      "mbPerSec": 951.3,
-      "bytesPerOp": 0,
-      "allocsPerOp": 0
-    },
-    {
-      "benchType": "FFTAny",
-      "library": "go-dsp-fft",
-      "size": 1000,
-      "class": "practical",
-      "nsOp": 274110,
-      "mbPerSec": 58.37,
-      "bytesPerOp": 388238,
-      "allocsPerOp": 304
-    },
-    {
-      "benchType": "FFTAny",
-      "library": "go-fftw",
-      "size": 1000,
-      "class": "practical",
-      "nsOp": 2445,
-      "mbPerSec": 6543.18,
-      "bytesPerOp": 0,
-      "allocsPerOp": 0
-    },
-    {
-      "benchType": "FFTAny",
-      "library": "gonum",
-      "size": 1000,
-      "class": "practical",
-      "nsOp": 23291,
-      "mbPerSec": 686.96,
-      "bytesPerOp": 0,
-      "allocsPerOp": 0
-    },
-    {
-      "benchType": "FFTAny",
-      "library": "algo-fft",
-      "size": 1009,
-      "class": "prime (rough p-1)",
-      "nsOp": 29996,
-      "mbPerSec": 538.2,
-      "bytesPerOp": 0,
-      "allocsPerOp": 0
-    },
-    {
-      "benchType": "FFTAny",
-      "library": "go-dsp-fft",
-      "size": 1009,
-      "class": "prime (rough p-1)",
-      "nsOp": 271734,
-      "mbPerSec": 59.41,
-      "bytesPerOp": 388254,
-      "allocsPerOp": 304
-    },
-    {
-      "benchType": "FFTAny",
-      "library": "go-fftw",
-      "size": 1009,
-      "class": "prime (rough p-1)",
-      "nsOp": 16471,
-      "mbPerSec": 980.15,
-      "bytesPerOp": 0,
-      "allocsPerOp": 0
-    },
-    {
-      "benchType": "FFTAny",
-      "library": "gonum",
-      "size": 1009,
-      "class": "prime (rough p-1)",
-      "nsOp": 1115015,
-      "mbPerSec": 14.48,
-      "bytesPerOp": 0,
-      "allocsPerOp": 0
-    },
-    {
-      "benchType": "FFTAny",
-      "library": "algo-fft",
-      "size": 1152,
-      "class": "5-smooth",
-      "nsOp": 19263,
-      "mbPerSec": 956.87,
-      "bytesPerOp": 0,
-      "allocsPerOp": 0
-    },
-    {
-      "benchType": "FFTAny",
-      "library": "go-dsp-fft",
-      "size": 1152,
-      "class": "5-smooth",
-      "nsOp": 611203,
-      "mbPerSec": 30.16,
-      "bytesPerOp": 759569,
-      "allocsPerOp": 341
-    },
-    {
-      "benchType": "FFTAny",
-      "library": "go-fftw",
-      "size": 1152,
-      "class": "5-smooth",
-      "nsOp": 3549,
-      "mbPerSec": 5192.87,
-      "bytesPerOp": 0,
-      "allocsPerOp": 0
-    },
-    {
-      "benchType": "FFTAny",
-      "library": "gonum",
-      "size": 1152,
-      "class": "5-smooth",
-      "nsOp": 28094,
-      "mbPerSec": 656.09,
-      "bytesPerOp": 0,
-      "allocsPerOp": 0
-    },
-    {
-      "benchType": "FFTAny",
-      "library": "algo-fft",
-      "size": 1153,
-      "class": "prime (smooth p-1)",
-      "nsOp": 41249,
-      "mbPerSec": 447.24,
-      "bytesPerOp": 0,
-      "allocsPerOp": 0
-    },
-    {
-      "benchType": "FFTAny",
-      "library": "go-dsp-fft",
-      "size": 1153,
-      "class": "prime (smooth p-1)",
-      "nsOp": 558172,
-      "mbPerSec": 33.05,
-      "bytesPerOp": 759544,
+      "bytesPerOp": 759562,
       "allocsPerOp": 340
     },
     {
@@ -1254,8 +1254,8 @@
       "library": "go-fftw",
       "size": 1153,
       "class": "prime (smooth p-1)",
-      "nsOp": 19323,
-      "mbPerSec": 954.71,
+      "nsOp": 19217,
+      "mbPerSec": 959.98,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -1264,8 +1264,8 @@
       "library": "gonum",
       "size": 1153,
       "class": "prime (smooth p-1)",
-      "nsOp": 1382328,
-      "mbPerSec": 13.35,
+      "nsOp": 1443173,
+      "mbPerSec": 12.78,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -1274,8 +1274,8 @@
       "library": "algo-fft",
       "size": 1344,
       "class": "7/11-smooth",
-      "nsOp": 26715,
-      "mbPerSec": 804.95,
+      "nsOp": 21940,
+      "mbPerSec": 980.12,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -1284,9 +1284,9 @@
       "library": "go-dsp-fft",
       "size": 1344,
       "class": "7/11-smooth",
-      "nsOp": 583457,
-      "mbPerSec": 36.86,
-      "bytesPerOp": 759559,
+      "nsOp": 541534,
+      "mbPerSec": 39.71,
+      "bytesPerOp": 759554,
       "allocsPerOp": 340
     },
     {
@@ -1294,8 +1294,8 @@
       "library": "go-fftw",
       "size": 1344,
       "class": "7/11-smooth",
-      "nsOp": 3265,
-      "mbPerSec": 6585.44,
+      "nsOp": 3470,
+      "mbPerSec": 6197.26,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -1304,8 +1304,8 @@
       "library": "gonum",
       "size": 1344,
       "class": "7/11-smooth",
-      "nsOp": 40116,
-      "mbPerSec": 536.05,
+      "nsOp": 41121,
+      "mbPerSec": 522.94,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -1314,8 +1314,8 @@
       "library": "algo-fft",
       "size": 1920,
       "class": "5-smooth",
-      "nsOp": 35221,
-      "mbPerSec": 872.2,
+      "nsOp": 21934,
+      "mbPerSec": 1400.56,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -1324,9 +1324,9 @@
       "library": "go-dsp-fft",
       "size": 1920,
       "class": "5-smooth",
-      "nsOp": 598747,
-      "mbPerSec": 51.31,
-      "bytesPerOp": 759552,
+      "nsOp": 584001,
+      "mbPerSec": 52.6,
+      "bytesPerOp": 759555,
       "allocsPerOp": 340
     },
     {
@@ -1334,8 +1334,8 @@
       "library": "go-fftw",
       "size": 1920,
       "class": "5-smooth",
-      "nsOp": 3697,
-      "mbPerSec": 8309.09,
+      "nsOp": 3808,
+      "mbPerSec": 8067.41,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -1344,8 +1344,8 @@
       "library": "gonum",
       "size": 1920,
       "class": "5-smooth",
-      "nsOp": 53733,
-      "mbPerSec": 571.72,
+      "nsOp": 52257,
+      "mbPerSec": 587.86,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -1354,8 +1354,8 @@
       "library": "algo-fft",
       "size": 2003,
       "class": "prime (rough p-1)",
-      "nsOp": 93060,
-      "mbPerSec": 344.38,
+      "nsOp": 98410,
+      "mbPerSec": 325.66,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -1364,9 +1364,9 @@
       "library": "go-dsp-fft",
       "size": 2003,
       "class": "prime (rough p-1)",
-      "nsOp": 534421,
-      "mbPerSec": 59.97,
-      "bytesPerOp": 759532,
+      "nsOp": 629686,
+      "mbPerSec": 50.9,
+      "bytesPerOp": 759542,
       "allocsPerOp": 340
     },
     {
@@ -1374,8 +1374,8 @@
       "library": "go-fftw",
       "size": 2003,
       "class": "prime (rough p-1)",
-      "nsOp": 40540,
-      "mbPerSec": 790.53,
+      "nsOp": 48532,
+      "mbPerSec": 660.35,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -1384,8 +1384,8 @@
       "library": "gonum",
       "size": 2003,
       "class": "prime (rough p-1)",
-      "nsOp": 4170717,
-      "mbPerSec": 7.68,
+      "nsOp": 4750293,
+      "mbPerSec": 6.75,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -1394,8 +1394,8 @@
       "library": "algo-fft",
       "size": 2016,
       "class": "7/11-smooth",
-      "nsOp": 42525,
-      "mbPerSec": 758.52,
+      "nsOp": 35841,
+      "mbPerSec": 899.97,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -1404,9 +1404,9 @@
       "library": "go-dsp-fft",
       "size": 2016,
       "class": "7/11-smooth",
-      "nsOp": 581510,
-      "mbPerSec": 55.47,
-      "bytesPerOp": 759566,
+      "nsOp": 552359,
+      "mbPerSec": 58.4,
+      "bytesPerOp": 759580,
       "allocsPerOp": 341
     },
     {
@@ -1414,8 +1414,8 @@
       "library": "go-fftw",
       "size": 2016,
       "class": "7/11-smooth",
-      "nsOp": 4401,
-      "mbPerSec": 7329.42,
+      "nsOp": 4659,
+      "mbPerSec": 6923.78,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -1424,8 +1424,8 @@
       "library": "gonum",
       "size": 2016,
       "class": "7/11-smooth",
-      "nsOp": 63352,
-      "mbPerSec": 509.16,
+      "nsOp": 69194,
+      "mbPerSec": 466.17,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -1434,8 +1434,8 @@
       "library": "algo-fft",
       "size": 2205,
       "class": "practical",
-      "nsOp": 62128,
-      "mbPerSec": 567.86,
+      "nsOp": 100182,
+      "mbPerSec": 352.16,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -1444,9 +1444,9 @@
       "library": "go-dsp-fft",
       "size": 2205,
       "class": "practical",
-      "nsOp": 992119,
-      "mbPerSec": 35.56,
-      "bytesPerOp": 1513787,
+      "nsOp": 1040815,
+      "mbPerSec": 33.9,
+      "bytesPerOp": 1513805,
       "allocsPerOp": 376
     },
     {
@@ -1454,8 +1454,8 @@
       "library": "go-fftw",
       "size": 2205,
       "class": "practical",
-      "nsOp": 7407,
-      "mbPerSec": 4762.85,
+      "nsOp": 7894,
+      "mbPerSec": 4469.06,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -1464,8 +1464,8 @@
       "library": "gonum",
       "size": 2205,
       "class": "practical",
-      "nsOp": 88517,
-      "mbPerSec": 398.57,
+      "nsOp": 96566,
+      "mbPerSec": 365.35,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -1474,8 +1474,8 @@
       "library": "algo-fft",
       "size": 3600,
       "class": "practical",
-      "nsOp": 73995,
-      "mbPerSec": 778.43,
+      "nsOp": 73393,
+      "mbPerSec": 784.82,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -1484,18 +1484,18 @@
       "library": "go-dsp-fft",
       "size": 3600,
       "class": "practical",
-      "nsOp": 1014146,
-      "mbPerSec": 56.8,
-      "bytesPerOp": 1513771,
-      "allocsPerOp": 376
+      "nsOp": 1161970,
+      "mbPerSec": 49.57,
+      "bytesPerOp": 1513812,
+      "allocsPerOp": 377
     },
     {
       "benchType": "FFTAny",
       "library": "go-fftw",
       "size": 3600,
       "class": "practical",
-      "nsOp": 12697,
-      "mbPerSec": 4536.48,
+      "nsOp": 14568,
+      "mbPerSec": 3953.78,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -1504,8 +1504,8 @@
       "library": "gonum",
       "size": 3600,
       "class": "practical",
-      "nsOp": 105737,
-      "mbPerSec": 544.75,
+      "nsOp": 154783,
+      "mbPerSec": 372.13,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -1514,8 +1514,8 @@
       "library": "algo-fft",
       "size": 4001,
       "class": "prime (smooth p-1)",
-      "nsOp": 177236,
-      "mbPerSec": 361.19,
+      "nsOp": 164134,
+      "mbPerSec": 390.02,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -1524,18 +1524,18 @@
       "library": "go-dsp-fft",
       "size": 4001,
       "class": "prime (smooth p-1)",
-      "nsOp": 1045639,
-      "mbPerSec": 61.22,
-      "bytesPerOp": 1513792,
-      "allocsPerOp": 376
+      "nsOp": 1037149,
+      "mbPerSec": 61.72,
+      "bytesPerOp": 1513813,
+      "allocsPerOp": 377
     },
     {
       "benchType": "FFTAny",
       "library": "go-fftw",
       "size": 4001,
       "class": "prime (smooth p-1)",
-      "nsOp": 67093,
-      "mbPerSec": 954.14,
+      "nsOp": 66130,
+      "mbPerSec": 968.03,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -1544,8 +1544,8 @@
       "library": "gonum",
       "size": 4001,
       "class": "prime (smooth p-1)",
-      "nsOp": 16252163,
-      "mbPerSec": 3.94,
+      "nsOp": 18582913,
+      "mbPerSec": 3.44,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -1554,8 +1554,8 @@
       "library": "algo-fft",
       "size": 9973,
       "class": "prime (rough p-1)",
-      "nsOp": 1012125,
-      "mbPerSec": 157.66,
+      "nsOp": 628187,
+      "mbPerSec": 254.01,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -1564,9 +1564,9 @@
       "library": "go-dsp-fft",
       "size": 9973,
       "class": "prime (rough p-1)",
-      "nsOp": 3552383,
-      "mbPerSec": 44.92,
-      "bytesPerOp": 6036859,
+      "nsOp": 3609080,
+      "mbPerSec": 44.21,
+      "bytesPerOp": 6036855,
       "allocsPerOp": 437
     },
     {
@@ -1574,8 +1574,8 @@
       "library": "go-fftw",
       "size": 9973,
       "class": "prime (rough p-1)",
-      "nsOp": 176888,
-      "mbPerSec": 902.09,
+      "nsOp": 208509,
+      "mbPerSec": 765.28,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -1584,8 +1584,8 @@
       "library": "gonum",
       "size": 9973,
       "class": "prime (rough p-1)",
-      "nsOp": 102003711,
-      "mbPerSec": 1.56,
+      "nsOp": 118916972,
+      "mbPerSec": 1.34,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -1594,8 +1594,8 @@
       "library": "algo-fft",
       "size": 12000,
       "class": "5-smooth",
-      "nsOp": 281981,
-      "mbPerSec": 680.9,
+      "nsOp": 224554,
+      "mbPerSec": 855.03,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -1604,18 +1604,18 @@
       "library": "go-dsp-fft",
       "size": 12000,
       "class": "5-smooth",
-      "nsOp": 3683092,
-      "mbPerSec": 52.13,
-      "bytesPerOp": 6036844,
-      "allocsPerOp": 437
+      "nsOp": 3583916,
+      "mbPerSec": 53.57,
+      "bytesPerOp": 6036921,
+      "allocsPerOp": 438
     },
     {
       "benchType": "FFTAny",
       "library": "go-fftw",
       "size": 12000,
       "class": "5-smooth",
-      "nsOp": 44500,
-      "mbPerSec": 4314.57,
+      "nsOp": 46505,
+      "mbPerSec": 4128.57,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -1624,8 +1624,8 @@
       "library": "gonum",
       "size": 12000,
       "class": "5-smooth",
-      "nsOp": 421096,
-      "mbPerSec": 455.95,
+      "nsOp": 414225,
+      "mbPerSec": 463.52,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -1634,8 +1634,8 @@
       "library": "algo-fft",
       "size": 12289,
       "class": "prime (smooth p-1)",
-      "nsOp": 489368,
-      "mbPerSec": 401.79,
+      "nsOp": 281775,
+      "mbPerSec": 697.81,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -1644,18 +1644,18 @@
       "library": "go-dsp-fft",
       "size": 12289,
       "class": "prime (smooth p-1)",
-      "nsOp": 3530842,
-      "mbPerSec": 55.69,
-      "bytesPerOp": 6036859,
-      "allocsPerOp": 437
+      "nsOp": 3537222,
+      "mbPerSec": 55.59,
+      "bytesPerOp": 6036900,
+      "allocsPerOp": 438
     },
     {
       "benchType": "FFTAny",
       "library": "go-fftw",
       "size": 12289,
       "class": "prime (smooth p-1)",
-      "nsOp": 240347,
-      "mbPerSec": 818.08,
+      "nsOp": 252699,
+      "mbPerSec": 778.1,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -1664,8 +1664,8 @@
       "library": "gonum",
       "size": 12289,
       "class": "prime (smooth p-1)",
-      "nsOp": 162244380,
-      "mbPerSec": 1.21,
+      "nsOp": 176473070,
+      "mbPerSec": 1.11,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -1674,9 +1674,9 @@
       "library": "algo-fft",
       "size": 44100,
       "class": "practical",
-      "nsOp": 1518539,
-      "mbPerSec": 464.66,
-      "bytesPerOp": 2,
+      "nsOp": 3184920,
+      "mbPerSec": 221.54,
+      "bytesPerOp": 1452,
       "allocsPerOp": 0
     },
     {
@@ -1684,9 +1684,9 @@
       "library": "go-dsp-fft",
       "size": 44100,
       "class": "practical",
-      "nsOp": 12814462,
-      "mbPerSec": 55.06,
-      "bytesPerOp": 24125851,
+      "nsOp": 14302382,
+      "mbPerSec": 49.33,
+      "bytesPerOp": 24125927,
       "allocsPerOp": 501
     },
     {
@@ -1694,8 +1694,8 @@
       "library": "go-fftw",
       "size": 44100,
       "class": "practical",
-      "nsOp": 181999,
-      "mbPerSec": 3876.95,
+      "nsOp": 197734,
+      "mbPerSec": 3568.42,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -1704,8 +1704,8 @@
       "library": "gonum",
       "size": 44100,
       "class": "practical",
-      "nsOp": 2244072,
-      "mbPerSec": 314.43,
+      "nsOp": 2421559,
+      "mbPerSec": 291.38,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -1714,8 +1714,8 @@
       "library": "algo-fft",
       "size": 96,
       "class": "5-smooth",
-      "nsOp": 1259,
-      "mbPerSec": 610.09,
+      "nsOp": 933.8,
+      "mbPerSec": 822.47,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -1724,8 +1724,8 @@
       "library": "algo-fft",
       "size": 97,
       "class": "prime (smooth p-1)",
-      "nsOp": 2861,
-      "mbPerSec": 271.23,
+      "nsOp": 2632,
+      "mbPerSec": 294.87,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -1734,8 +1734,8 @@
       "library": "algo-fft",
       "size": 257,
       "class": "prime (smooth p-1)",
-      "nsOp": 4215,
-      "mbPerSec": 487.76,
+      "nsOp": 6267,
+      "mbPerSec": 328.04,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -1744,8 +1744,8 @@
       "library": "algo-fft",
       "size": 448,
       "class": "7/11-smooth",
-      "nsOp": 6853,
-      "mbPerSec": 522.96,
+      "nsOp": 7478,
+      "mbPerSec": 479.29,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -1754,8 +1754,8 @@
       "library": "algo-fft",
       "size": 480,
       "class": "5-smooth",
-      "nsOp": 7443,
-      "mbPerSec": 515.9,
+      "nsOp": 6766,
+      "mbPerSec": 567.51,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -1764,8 +1764,8 @@
       "library": "algo-fft",
       "size": 641,
       "class": "prime (smooth p-1)",
-      "nsOp": 21757,
-      "mbPerSec": 235.69,
+      "nsOp": 20305,
+      "mbPerSec": 252.55,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -1774,8 +1774,8 @@
       "library": "algo-fft",
       "size": 704,
       "class": "7/11-smooth",
-      "nsOp": 12794,
-      "mbPerSec": 440.2,
+      "nsOp": 16020,
+      "mbPerSec": 351.56,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -1784,8 +1784,8 @@
       "library": "algo-fft",
       "size": 768,
       "class": "5-smooth",
-      "nsOp": 11081,
-      "mbPerSec": 554.47,
+      "nsOp": 4924,
+      "mbPerSec": 1247.69,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -1794,8 +1794,8 @@
       "library": "algo-fft",
       "size": 1000,
       "class": "practical",
-      "nsOp": 16683,
-      "mbPerSec": 479.54,
+      "nsOp": 33919,
+      "mbPerSec": 235.85,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -1804,8 +1804,8 @@
       "library": "algo-fft",
       "size": 1009,
       "class": "prime (rough p-1)",
-      "nsOp": 29703,
-      "mbPerSec": 271.75,
+      "nsOp": 45853,
+      "mbPerSec": 176.04,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -1814,8 +1814,8 @@
       "library": "algo-fft",
       "size": 1152,
       "class": "5-smooth",
-      "nsOp": 18917,
-      "mbPerSec": 487.17,
+      "nsOp": 12025,
+      "mbPerSec": 766.43,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -1824,8 +1824,8 @@
       "library": "algo-fft",
       "size": 1153,
       "class": "prime (smooth p-1)",
-      "nsOp": 42991,
-      "mbPerSec": 214.56,
+      "nsOp": 34815,
+      "mbPerSec": 264.94,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -1834,8 +1834,8 @@
       "library": "algo-fft",
       "size": 1344,
       "class": "7/11-smooth",
-      "nsOp": 26783,
-      "mbPerSec": 401.44,
+      "nsOp": 27227,
+      "mbPerSec": 394.9,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -1844,8 +1844,8 @@
       "library": "algo-fft",
       "size": 1920,
       "class": "5-smooth",
-      "nsOp": 32647,
-      "mbPerSec": 470.49,
+      "nsOp": 25675,
+      "mbPerSec": 598.25,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -1854,8 +1854,8 @@
       "library": "algo-fft",
       "size": 2003,
       "class": "prime (rough p-1)",
-      "nsOp": 83419,
-      "mbPerSec": 192.09,
+      "nsOp": 122196,
+      "mbPerSec": 131.13,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -1864,8 +1864,8 @@
       "library": "algo-fft",
       "size": 2016,
       "class": "7/11-smooth",
-      "nsOp": 42094,
-      "mbPerSec": 383.14,
+      "nsOp": 49336,
+      "mbPerSec": 326.9,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -1874,8 +1874,8 @@
       "library": "algo-fft",
       "size": 2205,
       "class": "practical",
-      "nsOp": 58843,
-      "mbPerSec": 299.78,
+      "nsOp": 129179,
+      "mbPerSec": 136.55,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -1884,8 +1884,8 @@
       "library": "algo-fft",
       "size": 3600,
       "class": "practical",
-      "nsOp": 74354,
-      "mbPerSec": 387.34,
+      "nsOp": 100435,
+      "mbPerSec": 286.75,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -1894,8 +1894,8 @@
       "library": "algo-fft",
       "size": 4001,
       "class": "prime (smooth p-1)",
-      "nsOp": 185427,
-      "mbPerSec": 172.62,
+      "nsOp": 236833,
+      "mbPerSec": 135.15,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -1904,8 +1904,8 @@
       "library": "algo-fft",
       "size": 9973,
       "class": "prime (rough p-1)",
-      "nsOp": 1030922,
-      "mbPerSec": 77.39,
+      "nsOp": 663227,
+      "mbPerSec": 120.3,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -1914,9 +1914,9 @@
       "library": "algo-fft",
       "size": 12000,
       "class": "5-smooth",
-      "nsOp": 272222,
-      "mbPerSec": 352.65,
-      "bytesPerOp": 0,
+      "nsOp": 332134,
+      "mbPerSec": 289.04,
+      "bytesPerOp": 1,
       "allocsPerOp": 0
     },
     {
@@ -1924,8 +1924,8 @@
       "library": "algo-fft",
       "size": 12289,
       "class": "prime (smooth p-1)",
-      "nsOp": 492992,
-      "mbPerSec": 199.42,
+      "nsOp": 319653,
+      "mbPerSec": 307.56,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -1934,9 +1934,9 @@
       "library": "algo-fft",
       "size": 44100,
       "class": "practical",
-      "nsOp": 1420336,
-      "mbPerSec": 248.39,
-      "bytesPerOp": 1,
+      "nsOp": 3055896,
+      "mbPerSec": 115.45,
+      "bytesPerOp": 0,
       "allocsPerOp": 0
     },
     {
@@ -1944,8 +1944,8 @@
       "library": "algo-fft",
       "size": 8,
       "class": "pow2",
-      "nsOp": 16.94,
-      "mbPerSec": 7555.09,
+      "nsOp": 8.529,
+      "mbPerSec": 15007.7,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -1954,9 +1954,9 @@
       "library": "go-dsp-fft",
       "size": 8,
       "class": "pow2",
-      "nsOp": 4466,
-      "mbPerSec": 28.66,
-      "bytesPerOp": 860,
+      "nsOp": 4322,
+      "mbPerSec": 29.62,
+      "bytesPerOp": 857,
       "allocsPerOp": 18
     },
     {
@@ -1964,8 +1964,8 @@
       "library": "go-fftw",
       "size": 8,
       "class": "pow2",
-      "nsOp": 33.71,
-      "mbPerSec": 3796.77,
+      "nsOp": 33.77,
+      "mbPerSec": 3790.69,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -1975,7 +1975,7 @@
       "size": 8,
       "class": "pow2",
       "nsOp": 108.7,
-      "mbPerSec": 1177.68,
+      "mbPerSec": 1177.73,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -1984,8 +1984,8 @@
       "library": "takatoh",
       "size": 8,
       "class": "pow2",
-      "nsOp": 213.9,
-      "mbPerSec": 598.53,
+      "nsOp": 224.7,
+      "mbPerSec": 569.75,
       "bytesPerOp": 256,
       "allocsPerOp": 2
     },
@@ -1994,8 +1994,8 @@
       "library": "algo-fft",
       "size": 16,
       "class": "pow2",
-      "nsOp": 42.65,
-      "mbPerSec": 6002.99,
+      "nsOp": 30.55,
+      "mbPerSec": 8379.3,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -2004,9 +2004,9 @@
       "library": "go-dsp-fft",
       "size": 16,
       "class": "pow2",
-      "nsOp": 5769,
-      "mbPerSec": 44.37,
-      "bytesPerOp": 1433,
+      "nsOp": 5707,
+      "mbPerSec": 44.86,
+      "bytesPerOp": 1434,
       "allocsPerOp": 26
     },
     {
@@ -2014,8 +2014,8 @@
       "library": "go-fftw",
       "size": 16,
       "class": "pow2",
-      "nsOp": 38.88,
-      "mbPerSec": 6584.01,
+      "nsOp": 42.93,
+      "mbPerSec": 5962.77,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -2024,8 +2024,8 @@
       "library": "gonum",
       "size": 16,
       "class": "pow2",
-      "nsOp": 174.1,
-      "mbPerSec": 1470.78,
+      "nsOp": 182.3,
+      "mbPerSec": 1404.52,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -2034,8 +2034,8 @@
       "library": "takatoh",
       "size": 16,
       "class": "pow2",
-      "nsOp": 524.3,
-      "mbPerSec": 488.3,
+      "nsOp": 509.4,
+      "mbPerSec": 502.58,
       "bytesPerOp": 512,
       "allocsPerOp": 2
     },
@@ -2044,8 +2044,8 @@
       "library": "algo-fft",
       "size": 32,
       "class": "pow2",
-      "nsOp": 119.4,
-      "mbPerSec": 4289.68,
+      "nsOp": 82.06,
+      "mbPerSec": 6238.98,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -2054,8 +2054,8 @@
       "library": "go-dsp-fft",
       "size": 32,
       "class": "pow2",
-      "nsOp": 7937,
-      "mbPerSec": 64.51,
+      "nsOp": 7901,
+      "mbPerSec": 64.8,
       "bytesPerOp": 2586,
       "allocsPerOp": 42
     },
@@ -2064,8 +2064,8 @@
       "library": "go-fftw",
       "size": 32,
       "class": "pow2",
-      "nsOp": 59.5,
-      "mbPerSec": 8605.38,
+      "nsOp": 62.05,
+      "mbPerSec": 8251.9,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -2074,8 +2074,8 @@
       "library": "gonum",
       "size": 32,
       "class": "pow2",
-      "nsOp": 504.9,
-      "mbPerSec": 1014.03,
+      "nsOp": 512.9,
+      "mbPerSec": 998.31,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -2084,8 +2084,8 @@
       "library": "takatoh",
       "size": 32,
       "class": "pow2",
-      "nsOp": 1259,
-      "mbPerSec": 406.72,
+      "nsOp": 1346,
+      "mbPerSec": 380.39,
       "bytesPerOp": 1024,
       "allocsPerOp": 2
     },
@@ -2094,8 +2094,8 @@
       "library": "algo-fft",
       "size": 64,
       "class": "pow2",
-      "nsOp": 226.5,
-      "mbPerSec": 4521.09,
+      "nsOp": 232.9,
+      "mbPerSec": 4395.81,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -2104,9 +2104,9 @@
       "library": "go-dsp-fft",
       "size": 64,
       "class": "pow2",
-      "nsOp": 9797,
-      "mbPerSec": 104.52,
-      "bytesPerOp": 4426,
+      "nsOp": 9775,
+      "mbPerSec": 104.76,
+      "bytesPerOp": 4427,
       "allocsPerOp": 45
     },
     {
@@ -2114,8 +2114,8 @@
       "library": "go-fftw",
       "size": 64,
       "class": "pow2",
-      "nsOp": 75.45,
-      "mbPerSec": 13572.26,
+      "nsOp": 81.51,
+      "mbPerSec": 12562.52,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -2124,8 +2124,8 @@
       "library": "gonum",
       "size": 64,
       "class": "pow2",
-      "nsOp": 916.3,
-      "mbPerSec": 1117.57,
+      "nsOp": 942.5,
+      "mbPerSec": 1086.47,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -2134,8 +2134,8 @@
       "library": "takatoh",
       "size": 64,
       "class": "pow2",
-      "nsOp": 2903,
-      "mbPerSec": 352.7,
+      "nsOp": 2953,
+      "mbPerSec": 346.73,
       "bytesPerOp": 2048,
       "allocsPerOp": 2
     },
@@ -2144,8 +2144,8 @@
       "library": "algo-fft",
       "size": 128,
       "class": "pow2",
-      "nsOp": 512.1,
-      "mbPerSec": 3999.42,
+      "nsOp": 408.3,
+      "mbPerSec": 5015.74,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -2154,9 +2154,9 @@
       "library": "go-dsp-fft",
       "size": 128,
       "class": "pow2",
-      "nsOp": 13734,
-      "mbPerSec": 149.12,
-      "bytesPerOp": 8315,
+      "nsOp": 13710,
+      "mbPerSec": 149.38,
+      "bytesPerOp": 8316,
       "allocsPerOp": 56
     },
     {
@@ -2164,8 +2164,8 @@
       "library": "go-fftw",
       "size": 128,
       "class": "pow2",
-      "nsOp": 137.8,
-      "mbPerSec": 14863.32,
+      "nsOp": 130.8,
+      "mbPerSec": 15658.53,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -2174,8 +2174,8 @@
       "library": "gonum",
       "size": 128,
       "class": "pow2",
-      "nsOp": 2184,
-      "mbPerSec": 937.64,
+      "nsOp": 2213,
+      "mbPerSec": 925.48,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -2184,8 +2184,8 @@
       "library": "takatoh",
       "size": 128,
       "class": "pow2",
-      "nsOp": 6977,
-      "mbPerSec": 293.52,
+      "nsOp": 7000,
+      "mbPerSec": 292.59,
       "bytesPerOp": 4096,
       "allocsPerOp": 2
     },
@@ -2194,8 +2194,8 @@
       "library": "algo-fft",
       "size": 256,
       "class": "pow2",
-      "nsOp": 1144,
-      "mbPerSec": 3579.55,
+      "nsOp": 637.7,
+      "mbPerSec": 6422.6,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -2204,9 +2204,9 @@
       "library": "go-dsp-fft",
       "size": 256,
       "class": "pow2",
-      "nsOp": 20284,
-      "mbPerSec": 201.93,
-      "bytesPerOp": 15789,
+      "nsOp": 20282,
+      "mbPerSec": 201.95,
+      "bytesPerOp": 15790,
       "allocsPerOp": 67
     },
     {
@@ -2214,8 +2214,8 @@
       "library": "go-fftw",
       "size": 256,
       "class": "pow2",
-      "nsOp": 279.9,
-      "mbPerSec": 14633.06,
+      "nsOp": 302.3,
+      "mbPerSec": 13549.13,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -2224,8 +2224,8 @@
       "library": "gonum",
       "size": 256,
       "class": "pow2",
-      "nsOp": 4279,
-      "mbPerSec": 957.34,
+      "nsOp": 4438,
+      "mbPerSec": 922.89,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -2234,8 +2234,8 @@
       "library": "takatoh",
       "size": 256,
       "class": "pow2",
-      "nsOp": 15349,
-      "mbPerSec": 266.86,
+      "nsOp": 15256,
+      "mbPerSec": 268.48,
       "bytesPerOp": 8192,
       "allocsPerOp": 2
     },
@@ -2244,8 +2244,8 @@
       "library": "algo-fft",
       "size": 512,
       "class": "pow2",
-      "nsOp": 2576,
-      "mbPerSec": 3180.45,
+      "nsOp": 1618,
+      "mbPerSec": 5063.62,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -2254,9 +2254,9 @@
       "library": "go-dsp-fft",
       "size": 512,
       "class": "pow2",
-      "nsOp": 32962,
-      "mbPerSec": 248.53,
-      "bytesPerOp": 30832,
+      "nsOp": 31848,
+      "mbPerSec": 257.22,
+      "bytesPerOp": 30834,
       "allocsPerOp": 79
     },
     {
@@ -2264,8 +2264,8 @@
       "library": "go-fftw",
       "size": 512,
       "class": "pow2",
-      "nsOp": 576.6,
-      "mbPerSec": 14208.06,
+      "nsOp": 623.1,
+      "mbPerSec": 13146.44,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -2274,8 +2274,8 @@
       "library": "gonum",
       "size": 512,
       "class": "pow2",
-      "nsOp": 12200,
-      "mbPerSec": 671.46,
+      "nsOp": 11336,
+      "mbPerSec": 722.66,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -2284,8 +2284,8 @@
       "library": "takatoh",
       "size": 512,
       "class": "pow2",
-      "nsOp": 33223,
-      "mbPerSec": 246.58,
+      "nsOp": 35334,
+      "mbPerSec": 231.85,
       "bytesPerOp": 16384,
       "allocsPerOp": 2
     },
@@ -2294,8 +2294,8 @@
       "library": "algo-fft",
       "size": 1024,
       "class": "pow2",
-      "nsOp": 5477,
-      "mbPerSec": 2991.62,
+      "nsOp": 4140,
+      "mbPerSec": 3957.59,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -2304,9 +2304,9 @@
       "library": "go-dsp-fft",
       "size": 1024,
       "class": "pow2",
-      "nsOp": 57239,
-      "mbPerSec": 286.24,
-      "bytesPerOp": 60181,
+      "nsOp": 56043,
+      "mbPerSec": 292.35,
+      "bytesPerOp": 60184,
       "allocsPerOp": 89
     },
     {
@@ -2314,8 +2314,8 @@
       "library": "go-fftw",
       "size": 1024,
       "class": "pow2",
-      "nsOp": 1366,
-      "mbPerSec": 11997.63,
+      "nsOp": 1430,
+      "mbPerSec": 11455.65,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -2324,8 +2324,8 @@
       "library": "gonum",
       "size": 1024,
       "class": "pow2",
-      "nsOp": 23320,
-      "mbPerSec": 702.57,
+      "nsOp": 22552,
+      "mbPerSec": 726.5,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -2334,8 +2334,8 @@
       "library": "takatoh",
       "size": 1024,
       "class": "pow2",
-      "nsOp": 74315,
-      "mbPerSec": 220.47,
+      "nsOp": 76349,
+      "mbPerSec": 214.59,
       "bytesPerOp": 32768,
       "allocsPerOp": 2
     },
@@ -2344,8 +2344,8 @@
       "library": "algo-fft",
       "size": 2048,
       "class": "pow2",
-      "nsOp": 13462,
-      "mbPerSec": 2434.12,
+      "nsOp": 10961,
+      "mbPerSec": 2989.39,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -2354,9 +2354,9 @@
       "library": "go-dsp-fft",
       "size": 2048,
       "class": "pow2",
-      "nsOp": 92760,
-      "mbPerSec": 353.26,
-      "bytesPerOp": 118489,
+      "nsOp": 87617,
+      "mbPerSec": 373.99,
+      "bytesPerOp": 118488,
       "allocsPerOp": 101
     },
     {
@@ -2364,8 +2364,8 @@
       "library": "go-fftw",
       "size": 2048,
       "class": "pow2",
-      "nsOp": 3419,
-      "mbPerSec": 9582.73,
+      "nsOp": 3333,
+      "mbPerSec": 9831.06,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -2374,8 +2374,8 @@
       "library": "gonum",
       "size": 2048,
       "class": "pow2",
-      "nsOp": 55347,
-      "mbPerSec": 592.05,
+      "nsOp": 54761,
+      "mbPerSec": 598.38,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -2384,8 +2384,8 @@
       "library": "takatoh",
       "size": 2048,
       "class": "pow2",
-      "nsOp": 165769,
-      "mbPerSec": 197.67,
+      "nsOp": 164417,
+      "mbPerSec": 199.3,
       "bytesPerOp": 65536,
       "allocsPerOp": 2
     },
@@ -2394,8 +2394,8 @@
       "library": "algo-fft",
       "size": 4096,
       "class": "pow2",
-      "nsOp": 36919,
-      "mbPerSec": 1775.13,
+      "nsOp": 24946,
+      "mbPerSec": 2627.08,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -2404,9 +2404,9 @@
       "library": "go-dsp-fft",
       "size": 4096,
       "class": "pow2",
-      "nsOp": 194157,
-      "mbPerSec": 337.54,
-      "bytesPerOp": 231323,
+      "nsOp": 194688,
+      "mbPerSec": 336.62,
+      "bytesPerOp": 231328,
       "allocsPerOp": 113
     },
     {
@@ -2414,8 +2414,8 @@
       "library": "go-fftw",
       "size": 4096,
       "class": "pow2",
-      "nsOp": 9379,
-      "mbPerSec": 6987.67,
+      "nsOp": 9432,
+      "mbPerSec": 6948.52,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -2424,8 +2424,8 @@
       "library": "gonum",
       "size": 4096,
       "class": "pow2",
-      "nsOp": 110968,
-      "mbPerSec": 590.58,
+      "nsOp": 108172,
+      "mbPerSec": 605.85,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -2434,8 +2434,8 @@
       "library": "takatoh",
       "size": 4096,
       "class": "pow2",
-      "nsOp": 363364,
-      "mbPerSec": 180.36,
+      "nsOp": 354307,
+      "mbPerSec": 184.97,
       "bytesPerOp": 131072,
       "allocsPerOp": 2
     },
@@ -2444,8 +2444,8 @@
       "library": "algo-fft",
       "size": 8192,
       "class": "pow2",
-      "nsOp": 73408,
-      "mbPerSec": 1785.53,
+      "nsOp": 53082,
+      "mbPerSec": 2469.25,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -2454,9 +2454,9 @@
       "library": "go-dsp-fft",
       "size": 8192,
       "class": "pow2",
-      "nsOp": 368456,
-      "mbPerSec": 355.73,
-      "bytesPerOp": 460903,
+      "nsOp": 368110,
+      "mbPerSec": 356.07,
+      "bytesPerOp": 460900,
       "allocsPerOp": 125
     },
     {
@@ -2464,8 +2464,8 @@
       "library": "go-fftw",
       "size": 8192,
       "class": "pow2",
-      "nsOp": 24356,
-      "mbPerSec": 5381.61,
+      "nsOp": 25342,
+      "mbPerSec": 5172.12,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -2474,8 +2474,8 @@
       "library": "gonum",
       "size": 8192,
       "class": "pow2",
-      "nsOp": 252770,
-      "mbPerSec": 518.54,
+      "nsOp": 277897,
+      "mbPerSec": 471.66,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -2484,8 +2484,8 @@
       "library": "takatoh",
       "size": 8192,
       "class": "pow2",
-      "nsOp": 796193,
-      "mbPerSec": 164.62,
+      "nsOp": 774297,
+      "mbPerSec": 169.28,
       "bytesPerOp": 262144,
       "allocsPerOp": 2
     },
@@ -2494,8 +2494,8 @@
       "library": "algo-fft",
       "size": 16384,
       "class": "pow2",
-      "nsOp": 150963,
-      "mbPerSec": 1736.48,
+      "nsOp": 114735,
+      "mbPerSec": 2284.77,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -2504,9 +2504,9 @@
       "library": "go-dsp-fft",
       "size": 16384,
       "class": "pow2",
-      "nsOp": 697046,
-      "mbPerSec": 376.08,
-      "bytesPerOp": 919786,
+      "nsOp": 704737,
+      "mbPerSec": 371.97,
+      "bytesPerOp": 919802,
       "allocsPerOp": 133
     },
     {
@@ -2514,8 +2514,8 @@
       "library": "go-fftw",
       "size": 16384,
       "class": "pow2",
-      "nsOp": 50968,
-      "mbPerSec": 5143.28,
+      "nsOp": 50853,
+      "mbPerSec": 5154.9,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -2524,8 +2524,8 @@
       "library": "gonum",
       "size": 16384,
       "class": "pow2",
-      "nsOp": 569717,
-      "mbPerSec": 460.13,
+      "nsOp": 507450,
+      "mbPerSec": 516.59,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -2534,8 +2534,8 @@
       "library": "takatoh",
       "size": 16384,
       "class": "pow2",
-      "nsOp": 1646604,
-      "mbPerSec": 159.2,
+      "nsOp": 1747703,
+      "mbPerSec": 149.99,
       "bytesPerOp": 524288,
       "allocsPerOp": 2
     },
@@ -2544,8 +2544,8 @@
       "library": "algo-fft",
       "size": 32768,
       "class": "pow2",
-      "nsOp": 275005,
-      "mbPerSec": 1906.46,
+      "nsOp": 242101,
+      "mbPerSec": 2165.58,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -2554,9 +2554,9 @@
       "library": "go-dsp-fft",
       "size": 32768,
       "class": "pow2",
-      "nsOp": 1341276,
-      "mbPerSec": 390.89,
-      "bytesPerOp": 1837486,
+      "nsOp": 1293347,
+      "mbPerSec": 405.37,
+      "bytesPerOp": 1837496,
       "allocsPerOp": 145
     },
     {
@@ -2564,8 +2564,8 @@
       "library": "go-fftw",
       "size": 32768,
       "class": "pow2",
-      "nsOp": 114888,
-      "mbPerSec": 4563.46,
+      "nsOp": 121581,
+      "mbPerSec": 4312.26,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -2574,8 +2574,8 @@
       "library": "gonum",
       "size": 32768,
       "class": "pow2",
-      "nsOp": 1250856,
-      "mbPerSec": 419.14,
+      "nsOp": 1166910,
+      "mbPerSec": 449.3,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -2584,8 +2584,8 @@
       "library": "takatoh",
       "size": 32768,
       "class": "pow2",
-      "nsOp": 3568425,
-      "mbPerSec": 146.92,
+      "nsOp": 3564065,
+      "mbPerSec": 147.1,
       "bytesPerOp": 1048576,
       "allocsPerOp": 2
     },
@@ -2594,8 +2594,8 @@
       "library": "algo-fft",
       "size": 8,
       "class": "pow2",
-      "nsOp": 17.01,
-      "mbPerSec": 3763.49,
+      "nsOp": 8.41,
+      "mbPerSec": 7609.86,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -2604,8 +2604,8 @@
       "library": "algo-fft",
       "size": 16,
       "class": "pow2",
-      "nsOp": 39.18,
-      "mbPerSec": 3267.31,
+      "nsOp": 13.05,
+      "mbPerSec": 9805.18,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -2614,8 +2614,8 @@
       "library": "algo-fft",
       "size": 32,
       "class": "pow2",
-      "nsOp": 107.5,
-      "mbPerSec": 2381.27,
+      "nsOp": 33.24,
+      "mbPerSec": 7701.51,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -2624,8 +2624,8 @@
       "library": "algo-fft",
       "size": 64,
       "class": "pow2",
-      "nsOp": 219.7,
-      "mbPerSec": 2330.15,
+      "nsOp": 133.6,
+      "mbPerSec": 3832.3,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -2634,8 +2634,8 @@
       "library": "algo-fft",
       "size": 128,
       "class": "pow2",
-      "nsOp": 528.2,
-      "mbPerSec": 1938.82,
+      "nsOp": 338.3,
+      "mbPerSec": 3027.2,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -2644,8 +2644,8 @@
       "library": "algo-fft",
       "size": 256,
       "class": "pow2",
-      "nsOp": 1507,
-      "mbPerSec": 1358.97,
+      "nsOp": 447.4,
+      "mbPerSec": 4577.84,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -2654,8 +2654,8 @@
       "library": "algo-fft",
       "size": 512,
       "class": "pow2",
-      "nsOp": 2607,
-      "mbPerSec": 1571.27,
+      "nsOp": 984.6,
+      "mbPerSec": 4159.86,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -2664,8 +2664,8 @@
       "library": "algo-fft",
       "size": 1024,
       "class": "pow2",
-      "nsOp": 6583,
-      "mbPerSec": 1244.33,
+      "nsOp": 3453,
+      "mbPerSec": 2372.25,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -2674,8 +2674,8 @@
       "library": "algo-fft",
       "size": 2048,
       "class": "pow2",
-      "nsOp": 15337,
-      "mbPerSec": 1068.27,
+      "nsOp": 6935,
+      "mbPerSec": 2362.58,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -2684,8 +2684,8 @@
       "library": "algo-fft",
       "size": 4096,
       "class": "pow2",
-      "nsOp": 32313,
-      "mbPerSec": 1014.08,
+      "nsOp": 16208,
+      "mbPerSec": 2021.77,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -2694,8 +2694,8 @@
       "library": "algo-fft",
       "size": 8192,
       "class": "pow2",
-      "nsOp": 71295,
-      "mbPerSec": 919.22,
+      "nsOp": 33913,
+      "mbPerSec": 1932.46,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -2704,8 +2704,8 @@
       "library": "algo-fft",
       "size": 16384,
       "class": "pow2",
-      "nsOp": 149136,
-      "mbPerSec": 878.88,
+      "nsOp": 83392,
+      "mbPerSec": 1571.76,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     },
@@ -2714,8 +2714,8 @@
       "library": "algo-fft",
       "size": 32768,
       "class": "pow2",
-      "nsOp": 280663,
-      "mbPerSec": 934.02,
+      "nsOp": 167668,
+      "mbPerSec": 1563.48,
       "bytesPerOp": 0,
       "allocsPerOp": 0
     }
@@ -2725,33 +2725,33 @@
       "n": 8,
       "class": "pow2",
       "strategy": "DIT",
-      "algorithm": "dit8_radix8_generic",
+      "algorithm": "dit8_radix4_avx2",
       "strategy32": "DIT",
-      "algorithm32": "dit8_radix8_generic"
+      "algorithm32": "dit8_radix4_avx2"
     },
     {
       "n": 16,
       "class": "pow2",
       "strategy": "DIT",
-      "algorithm": "dit16_radix16_generic",
+      "algorithm": "dit16_radix4_avx2",
       "strategy32": "DIT",
-      "algorithm32": "dit16_radix16_generic"
+      "algorithm32": "dit16_radix16_avx2"
     },
     {
       "n": 32,
       "class": "pow2",
       "strategy": "DIT",
-      "algorithm": "dit32_radix4_then2_generic",
+      "algorithm": "dit32_radix4_then2_avx2",
       "strategy32": "DIT",
-      "algorithm32": "dit32_radix4_then2_generic"
+      "algorithm32": "dit32_radix32_avx2"
     },
     {
       "n": 64,
       "class": "pow2",
       "strategy": "DIT",
-      "algorithm": "dit64_radix4_generic",
+      "algorithm": "dit64_radix4_avx2",
       "strategy32": "DIT",
-      "algorithm32": "dit64_radix4_generic"
+      "algorithm32": "dit64_radix4_avx2"
     },
     {
       "n": 96,
@@ -2773,17 +2773,17 @@
       "n": 128,
       "class": "pow2",
       "strategy": "DIT",
-      "algorithm": "dit128_radix4_then2_generic",
+      "algorithm": "dit128_radix4_then2_avx2",
       "strategy32": "DIT",
-      "algorithm32": "dit128_radix4_then2_generic"
+      "algorithm32": "dit128_radix4_then2_avx2"
     },
     {
       "n": 256,
       "class": "pow2",
       "strategy": "DIT",
-      "algorithm": "dit256_radix4_generic",
+      "algorithm": "dit256_radix16_avx2",
       "strategy32": "DIT",
-      "algorithm32": "dit256_radix16_generic"
+      "algorithm32": "dit256_radix2_avx2"
     },
     {
       "n": 257,
@@ -2813,9 +2813,9 @@
       "n": 512,
       "class": "pow2",
       "strategy": "DIT",
-      "algorithm": "dit512_radix4_then2_generic",
+      "algorithm": "dit512_radix8_avx2",
       "strategy32": "DIT",
-      "algorithm32": "dit512_radix4_then2_generic"
+      "algorithm32": "dit512_radix2_avx2"
     },
     {
       "n": 641,
@@ -2861,9 +2861,9 @@
       "n": 1024,
       "class": "pow2",
       "strategy": "DIT",
-      "algorithm": "dit1024_radix4_generic",
+      "algorithm": "dit1024_radix4_avx2",
       "strategy32": "DIT",
-      "algorithm32": "dit1024_radix4_generic"
+      "algorithm32": "dit1024_radix4_avx2"
     },
     {
       "n": 1152,
@@ -2917,9 +2917,9 @@
       "n": 2048,
       "class": "pow2",
       "strategy": "DIT",
-      "algorithm": "dit2048_radix4_then2_generic",
+      "algorithm": "dit2048_radix4_then2_avx2",
       "strategy32": "DIT",
-      "algorithm32": "dit2048_radix4_then2_generic"
+      "algorithm32": "dit2048_radix4_then2_avx2"
     },
     {
       "n": 2205,
@@ -2949,17 +2949,17 @@
       "n": 4096,
       "class": "pow2",
       "strategy": "DIT",
-      "algorithm": "dit4096_radix4_generic",
+      "algorithm": "dit4096_radix4_avx2",
       "strategy32": "DIT",
-      "algorithm32": "dit4096_radix4_generic"
+      "algorithm32": "dit4096_radix4_avx2"
     },
     {
       "n": 8192,
       "class": "pow2",
       "strategy": "DIT",
-      "algorithm": "dit8192_radix4_then2_generic",
+      "algorithm": "dit8192_radix4_then2_avx2",
       "strategy32": "DIT",
-      "algorithm32": "dit8192_radix4_then2_generic"
+      "algorithm32": "dit8192_radix4_then2_params_avx2"
     },
     {
       "n": 9973,
@@ -2989,25 +2989,25 @@
       "n": 16384,
       "class": "pow2",
       "strategy": "DIT",
-      "algorithm": "dit16384_radix4_generic",
+      "algorithm": "dit16384_radix4_avx2",
       "strategy32": "DIT",
-      "algorithm32": "dit16384_radix4_generic"
+      "algorithm32": "dit16384_radix4_avx2"
     },
     {
       "n": 32768,
       "class": "pow2",
       "strategy": "DIT",
-      "algorithm": "dit32768_radix4_then2_generic",
+      "algorithm": "dit32768_radix4_then2_avx2",
       "strategy32": "DIT",
-      "algorithm32": "dit32768_radix4_then2_generic"
+      "algorithm32": "dit32768_radix4_then2_avx2"
     },
     {
       "n": 44100,
       "class": "practical",
-      "strategy": "Stockham",
-      "algorithm": "stockham",
-      "strategy32": "Stockham",
-      "algorithm32": "stockham"
+      "strategy": "Bluestein",
+      "algorithm": "bluestein",
+      "strategy32": "Bluestein",
+      "algorithm32": "bluestein"
     }
   ]
 }

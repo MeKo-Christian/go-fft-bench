@@ -10,7 +10,10 @@
   **Build it with `-tags purego`** — matplotlib-go's default AGG backend needs
   a vendored FreeType prefix that is not shipped in the module.
 - `scripts/sweep.sh` runs both builds (default and `-tags purego`) end to end.
+  `cmd/fftplot -baseline OLD.json` prints what changed between two sweeps
+  instead of rendering charts.
 - `results/` holds the JSON the plotting tool reads; `plots/` the PNGs.
+  `results/baseline-*.json` are kept sweeps of an earlier algo-fft tag.
 - `bin/` contains built binaries (created by `just build`)
 - `go.mod` defines the module and benchmark dependencies.
 - `justfile` provides recipes (`build`, `bench`, `sweep`, `plot`, `report`, …)
@@ -26,6 +29,12 @@
   laptop biases every library at a size equally and the ratios survive.
 - `TestAnySizesAccuracy` must pass before any arbitrary-length numbers are
   quoted; it cross-checks algo-fft, go-dsp and FFTW against gonum.
+- **Never compare against a stored baseline without checking the drift.**
+  `fftplot -baseline` reports the unchanged libraries as a control; a geomean
+  more than a few percent from zero means the two sweeps saw different machine
+  states, and the algo-fft deltas are wrong by that much. The fix is to
+  re-measure the baseline tag on the current machine, not to caveat the number
+  — a v0.7.0 baseline from three days earlier was off by 17–31%.
 - `algo-fft` is pinned to a released tag in `go.mod`. `matplotlib-go` uses a
   local `replace` because the API used here is newer than its latest tag.
 

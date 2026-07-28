@@ -26,8 +26,17 @@ func main() {
 		outDir     = flag.String("out", "plots", "directory to write PNG charts into")
 		dpi        = flag.Float64("dpi", 144, "output resolution")
 		summary    = flag.Bool("summary", false, "print the aggregate numbers to stdout instead of rendering charts")
+		baseline   = flag.String("baseline", "", "benchrunner JSON of an earlier run; print what changed since it instead of rendering charts")
 	)
 	flag.Parse()
+
+	if *baseline != "" {
+		if err := printComparison(*baseline, *simdPath); err != nil {
+			fmt.Fprintf(os.Stderr, "Error: %v\n", err)
+			os.Exit(1)
+		}
+		return
+	}
 
 	if *summary {
 		if err := printSummary(*simdPath, *puregoPath); err != nil {
@@ -58,6 +67,22 @@ func printSummary(simdPath, puregoPath string) error {
 		}
 	}
 	writeSummary(os.Stdout, simd, pure)
+	return nil
+}
+
+// printComparison loads an earlier run alongside the current one and writes
+// the per-size deltas as text. Both files must come from the same machine for
+// the numbers to mean anything; writeComparison says so when they do not.
+func printComparison(baselinePath, currentPath string) error {
+	old, err := LoadRun(baselinePath)
+	if err != nil {
+		return fmt.Errorf("loading baseline: %w", err)
+	}
+	current, err := LoadRun(currentPath)
+	if err != nil {
+		return fmt.Errorf("loading current results: %w", err)
+	}
+	writeComparison(os.Stdout, old, current)
 	return nil
 }
 

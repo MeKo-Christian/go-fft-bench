@@ -9,6 +9,7 @@ import (
 	"github.com/cwbudde/matplotlib-go/color"
 	"github.com/cwbudde/matplotlib-go/core"
 	"github.com/cwbudde/matplotlib-go/geom"
+	"github.com/cwbudde/matplotlib-go/optional"
 	"github.com/cwbudde/matplotlib-go/render"
 	"github.com/cwbudde/matplotlib-go/style"
 	"github.com/cwbudde/matplotlib-go/ticker"
@@ -19,9 +20,15 @@ import (
 // shared helpers
 // ---------------------------------------------------------------------------
 
-func f64(v float64) *float64 { return &v }
+// The option structs spell "not supplied" as an unset optional.Value rather
+// than a nil pointer, so every value passed to one goes through optional.Of.
+// These wrappers keep that from crowding out the option being set.
 
-func marker(m core.MarkerType) *core.MarkerType { return &m }
+func f64(v float64) optional.Value[float64] { return optional.Of(v) }
+
+func marker(m core.MarkerType) optional.Value[core.MarkerType] { return optional.Of(m) }
+
+func col(c render.Color) optional.Value[render.Color] { return optional.Of(c) }
 
 // palette gives each library a stable colour across every chart, so a reader
 // who learns "orange is FFTW" on the first chart keeps that on the last.
@@ -162,12 +169,12 @@ func plotLine(ax *core.Axes, lib string, xs, ys []float64, label string) error {
 	m := libMarker(lib)
 	_, err := ax.Plot(xs, ys, core.PlotOptions{
 		Label:           label,
-		Color:           &c,
+		Color:           col(c),
 		LineWidth:       f64(1.6),
 		LineStyle:       core.LineStyleSolid,
 		Marker:          marker(m),
 		MarkerSize:      f64(4.5),
-		MarkerFaceColor: &c,
+		MarkerFaceColor: col(c),
 	})
 	return err
 }
@@ -181,7 +188,7 @@ func hline(ax *core.Axes, xs []float64, y float64, label string) error {
 	grey := render.Color{R: 0.35, G: 0.35, B: 0.35, A: 1}
 	_, err := ax.Plot(xs, line, core.PlotOptions{
 		Label:     label,
-		Color:     &grey,
+		Color:     col(grey),
 		LineWidth: f64(1.0),
 		LineStyle: core.LineStyleDashed,
 	})
@@ -345,9 +352,9 @@ func plotNonPow2ByClass(run *Run, path string, dpi float64) error {
 		edge := render.Color{R: 0.15, G: 0.15, B: 0.15, A: 1}
 		if _, err := ax.Bar(pos, vals, core.BarOptions{
 			Label:     lib,
-			Color:     &c,
+			Color:     col(c),
 			Width:     f64(width * 0.92),
-			EdgeColor: &edge,
+			EdgeColor: col(edge),
 			EdgeWidth: f64(0.6),
 		}); err != nil {
 			return err
@@ -362,7 +369,7 @@ func plotNonPow2ByClass(run *Run, path string, dpi float64) error {
 	ax.XAxis.Locator = ticker.FixedLocator{TicksList: centers}
 	ax.XAxis.Formatter = ticker.FixedFormatter{Labels: classes}
 	headroom(ax, append(allValues, 1.0), 1.28)
-	_ = ax.TickParams(core.TickParams{Which: "major", LabelSize: f64(8.5)})
+	_ = ax.TickParams(core.TickParams{Which: "major", LabelSize: f64(8.5).Ptr()})
 	ax.SetTitle("Non-power-of-two lengths: geometric mean speed vs FFTW3")
 	ax.SetXLabel("length class")
 	ax.SetYLabel("speedup vs FFTW3  (>1 is faster)")
@@ -443,9 +450,9 @@ func plotNonPow2Detail(run *Run, path string, dpi float64) error {
 		edge := render.Color{R: 0.15, G: 0.15, B: 0.15, A: 1}
 		if _, err := ax.Bar(pos, vals, core.BarOptions{
 			Label:     class,
-			Color:     &c,
+			Color:     col(c),
 			Width:     f64(0.72),
-			EdgeColor: &edge,
+			EdgeColor: col(edge),
 			EdgeWidth: f64(0.5),
 		}); err != nil {
 			return err
@@ -465,7 +472,7 @@ func plotNonPow2Detail(run *Run, path string, dpi float64) error {
 		speedups = append(speedups, e.speedup)
 	}
 	headroom(ax, append(speedups, 1.0), 1.42)
-	_ = ax.TickParams(core.TickParams{Which: "major", LabelSize: f64(7.5)})
+	_ = ax.TickParams(core.TickParams{Which: "major", LabelSize: f64(7.5).Ptr()})
 	ax.SetTitle("Every non-power-of-two length measured, algo-fft vs FFTW3")
 	ax.SetXLabel("transform length n, grouped by class")
 	ax.SetYLabel("speedup vs FFTW3  (>1 is faster)")
@@ -527,11 +534,11 @@ func plotPrecision(run *Run, path string, dpi float64) error {
 		c := s.color
 		if _, err := ax.Plot(xs, ys, core.PlotOptions{
 			Label:           s.label,
-			Color:           &c,
+			Color:           col(c),
 			LineWidth:       f64(1.6),
 			Marker:          marker(s.marker),
 			MarkerSize:      f64(4.5),
-			MarkerFaceColor: &c,
+			MarkerFaceColor: col(c),
 		}); err != nil {
 			return err
 		}
@@ -549,7 +556,7 @@ func plotPrecision(run *Run, path string, dpi float64) error {
 		c := libColor("go-fftw")
 		if _, err := ax.Plot(fx, fy, core.PlotOptions{
 			Label:     "FFTW3, complex128",
-			Color:     &c,
+			Color:     col(c),
 			LineWidth: f64(1.2),
 			LineStyle: core.LineStyleDashed,
 		}); err != nil {
@@ -614,11 +621,11 @@ func plotSIMDvsPurego(simd, pure *Run, path string, dpi float64) error {
 		c := s.color
 		if _, err := ax.Plot(xs, ys, core.PlotOptions{
 			Label:           s.label,
-			Color:           &c,
+			Color:           col(c),
 			LineWidth:       f64(1.6),
 			Marker:          marker(s.marker),
 			MarkerSize:      f64(4.5),
-			MarkerFaceColor: &c,
+			MarkerFaceColor: col(c),
 		}); err != nil {
 			return err
 		}
@@ -686,15 +693,15 @@ func plotPuregoVsCompetitors(simd, pure *Run, path string, dpi float64) error {
 		c := s.c
 		opts := core.PlotOptions{
 			Label:           s.label,
-			Color:           &c,
+			Color:           col(c),
 			LineWidth:       f64(1.6),
 			Marker:          marker(s.m),
 			MarkerSize:      f64(4.5),
-			MarkerFaceColor: &c,
+			MarkerFaceColor: col(c),
 		}
 		if s.dash {
 			opts.LineStyle = core.LineStyleDashed
-			opts.MarkerFaceColor = nil
+			opts.MarkerFaceColor = optional.None[render.Color]()
 		}
 		if _, err := ax.Plot(xs, ys, opts); err != nil {
 			return err

@@ -86,6 +86,24 @@ just plot
 | `06-simd-vs-purego` | what the hand-written codelets buy |
 | `07-purego-vs-competitors` | the pure-Go build against the other Go libraries |
 
+### Comparing two runs
+
+```bash
+go run -tags purego ./cmd/fftplot \
+    -baseline results/baseline-v0.7.0-simd.json -simd results/simd.json
+```
+
+Prints, per benchmark type and length class, what changed between an earlier
+sweep and the current one, plus the algo-fft plan routes that resolved
+differently — which is usually what explains a delta.
+
+It also reports the same aggregate for the libraries that did *not* change
+between the runs. Those are the control: their code is identical, so anything
+beyond a couple of percent means the two sweeps saw different machine states
+and the algo-fft deltas carry that same error. Keep a baseline JSON alongside
+the tagged results it came from, and **re-measure the baseline on the current
+machine** rather than comparing against an old file when the control drifts.
+
 **Build the plotting tool with `-tags purego`** (the `just plot` recipe does).
 matplotlib-go's default AGG backend compiles a cgo FreeType binding against a
 vendored prefix that is not shipped in the module; the pure-Go text path
