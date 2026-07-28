@@ -10,6 +10,8 @@ github.com/cwbudde/algo-fft v0.7.0 h1:k5zteU6FoALn+PDkTC5gn1A3gry3e0pajuIOR+UxP5
 github.com/cwbudde/algo-fft v0.7.0/go.mod h1:H5rJ7JNXvhe3kT4yc41TJB9DEnO7KlhHN7toLO+ZZXU=
 github.com/cwbudde/algo-fft v0.7.2 h1:OtEpmuwGbYUj/Ot38j34mA2jZRu0FsAuWKVd9SjonRc=
 github.com/cwbudde/algo-fft v0.7.2/go.mod h1:H5rJ7JNXvhe3kT4yc41TJB9DEnO7KlhHN7toLO+ZZXU=
+github.com/cwbudde/algo-fft v0.7.3 h1:1MDkBhgo/hhigpbTMDvcXZpMaW0ubz844IL6rDL/Bms=
+github.com/cwbudde/algo-fft v0.7.3/go.mod h1:H5rJ7JNXvhe3kT4yc41TJB9DEnO7KlhHN7toLO+ZZXU=
 github.com/cwbudde/go-fftw v0.0.0-20260418165213-243f87785b6a h1:FFix1vwyR6RYyG0qFksgXESPK5d1aKTNXsOXMx/1A9Y=
 github.com/cwbudde/go-fftw v0.0.0-20260418165213-243f87785b6a/go.mod h1:K2Hh+8UEYV212UVztRtEKdR4w2mYkXPS6YC2bG/0x8k=
 github.com/cwbudde/mathtext v0.5.3 h1:6OrE6EjQiAH/EtOyh/4n4Gy+1pHHIjGMz9UeQ8x0aoo=
