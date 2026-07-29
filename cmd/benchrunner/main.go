@@ -21,6 +21,10 @@ import (
 
 const version = "1.1.0"
 
+// algoFFTLibrary is the library under test: the one whose complex64 series
+// needs a baseline the reference libraries cannot provide.
+const algoFFTLibrary = "algo-fft"
+
 // BenchmarkResult represents a single benchmark result
 type BenchmarkResult struct {
 	BenchType string  `json:"benchType"`
@@ -482,7 +486,10 @@ func (r *BenchmarkRunner) generateMarkdown() string {
 	fmt.Fprintf(&b, "- `go-fftw` requires FFTW shared libraries.\n")
 	fmt.Fprintf(&b, "- `go-dsp-fft` allocates on every call (no reusable plan).\n")
 	fmt.Fprintf(&b, "- `FFTAny` covers non-power-of-two lengths; `takatoh` is excluded there because it is radix-2 only.\n")
-	fmt.Fprintf(&b, "- **Speedup** shows performance relative to go-fftw baseline (higher is better).\n\n")
+	fmt.Fprintf(&b, "- **Speedup** shows performance relative to go-fftw baseline (higher is better).\n")
+	fmt.Fprintf(&b, "- The `*32` sections are complex64. FFTW has no complex64 arm, so they are\n")
+	fmt.Fprintf(&b, "  compared against `algo-fft`'s own complex128 series instead: their speedup\n")
+	fmt.Fprintf(&b, "  column is the complex128/complex64 ratio, i.e. what the extra precision costs.\n\n")
 
 	if len(r.PlanInfos) > 0 {
 		r.writePlanRouteTable(&b)
@@ -502,22 +509,29 @@ func (r *BenchmarkRunner) generateMarkdown() string {
 		fmt.Fprintf(&b, "## %s Benchmarks\n\n", benchType)
 
 		libraries := r.Results[benchType]
-		baselineData, hasBaseline := libraries[r.Baseline]
+		base, hasBaseline := r.baselineFor(benchType)
 
 		if !hasBaseline {
 			fmt.Fprintf(&b, "### Error: Baseline library '%s' not found\n\n", r.Baseline)
 			continue
 		}
+		baselineData := base.data
 
-		// Baseline table
-		r.writeBaselineTable(&b, benchType, baselineData)
+		// Baseline table. Skipped when the baseline was borrowed from another
+		// section — its own numbers are tabulated there.
+		if base.own {
+			r.writeBaselineTable(&b, base.label, baselineData)
+		} else {
+			fmt.Fprintf(&b, "Compared against **%s**, i.e. the speedup column is the\n"+
+				"complex128/complex64 ratio at that size.\n\n", base.label)
+		}
 
 		// Comparison tables for other libraries: the known ones in a fixed
 		// display order, then anything unrecognised sorted alphabetically.
 		// The split point is how many known libraries were actually present,
 		// not len(libOrder) — a benchmark type that only some libraries
 		// implement (FFT32, FFTAny) has fewer.
-		libOrder := []string{"algo-fft", "go-dsp-fft", "gonum", "takatoh"}
+		libOrder := []string{algoFFTLibrary, "go-dsp-fft", "gonum", "takatoh"}
 		var otherLibs []string
 		for _, lib := range libOrder {
 			if _, ok := libraries[lib]; ok && lib != r.Baseline {
@@ -533,7 +547,7 @@ func (r *BenchmarkRunner) generateMarkdown() string {
 		sort.Strings(otherLibs[known:])
 
 		for _, library := range otherLibs {
-			r.writeComparisonTable(&b, benchType, library, libraries[library], baselineData)
+			r.writeComparisonTable(&b, benchType, library, base.column, libraries[library], baselineData)
 		}
 	}
 
@@ -561,11 +575,54 @@ func (r *BenchmarkRunner) writePlanRouteTable(w io.Writer) {
 	fmt.Fprintf(w, "\n")
 }
 
-func (r *BenchmarkRunner) writeBaselineTable(w io.Writer, benchType string, data map[int]*BenchmarkResult) {
-	baselineName := r.Baseline
-	if r.Baseline == "go-fftw" {
-		baselineName = "go-fftw (FFTW3)"
+// baselineRef is the series a section's speedup column is computed against.
+// own is false when it was borrowed from another section, which is how the
+// complex64 benchmarks get a baseline at all.
+type baselineRef struct {
+	label  string // full name, for the section heading
+	column string // short name, for the speedup column header
+	data   map[int]*BenchmarkResult
+	own    bool
+}
+
+// complex128Twin maps a complex64 benchmark type to the complex128 one that
+// runs the same sizes.
+var complex128Twin = map[string]string{
+	"FFT32":    "FFT",
+	"IFFT32":   "IFFT",
+	"FFTAny32": "FFTAny",
+}
+
+// baselineFor resolves the baseline for one benchmark type. The configured
+// library wins where it ran. FFTW has no complex64 arm, so the *32 sections
+// would otherwise be dropped entirely despite being measured; they fall back
+// to algo-fft's own complex128 series, which turns their speedup column into
+// the complex128/complex64 ratio — the number that says what the extra
+// precision costs.
+func (r *BenchmarkRunner) baselineFor(benchType string) (baselineRef, bool) {
+	libraries := r.Results[benchType]
+	if data, ok := libraries[r.Baseline]; ok {
+		label := r.Baseline
+		if r.Baseline == "go-fftw" {
+			label = "go-fftw (FFTW3)"
+		}
+		return baselineRef{label: label, column: "baseline", data: data, own: true}, true
 	}
+
+	if twin, ok := complex128Twin[benchType]; ok {
+		if data, ok := r.Results[twin][algoFFTLibrary]; ok {
+			return baselineRef{
+				label:  algoFFTLibrary + " " + twin + " (complex128)",
+				column: "complex128",
+				data:   data,
+			}, true
+		}
+	}
+
+	return baselineRef{}, false
+}
+
+func (r *BenchmarkRunner) writeBaselineTable(w io.Writer, baselineName string, data map[int]*BenchmarkResult) {
 	fmt.Fprintf(w, "### Baseline: %s\n\n", baselineName)
 	fmt.Fprintf(w, "| Size  | ns/op  | MB/s     | B/op | allocs/op |\n")
 	fmt.Fprintf(w, "| ----- | ------ | -------- | ---- | --------- |\n")
@@ -589,14 +646,14 @@ func (r *BenchmarkRunner) writeBaselineTable(w io.Writer, benchType string, data
 	fmt.Fprintf(w, "\n")
 }
 
-func (r *BenchmarkRunner) writeComparisonTable(w io.Writer, benchType, library string, data, baselineData map[int]*BenchmarkResult) {
+func (r *BenchmarkRunner) writeComparisonTable(w io.Writer, benchType, library, baselineColumn string, data, baselineData map[int]*BenchmarkResult) {
 	sectionSuffix := ""
-	if strings.HasPrefix(benchType, "IFFT") && library != "algo-fft" {
+	if strings.HasPrefix(benchType, "IFFT") && library != algoFFTLibrary {
 		sectionSuffix = fmt.Sprintf(" (%s)", benchType)
 	}
 
 	fmt.Fprintf(w, "### %s%s\n\n", library, sectionSuffix)
-	fmt.Fprintf(w, "| Size  | ns/op  | Speedup vs baseline | MB/s     | B/op   | allocs/op |\n")
+	fmt.Fprintf(w, "| Size  | ns/op  | Speedup vs %-8s | MB/s     | B/op   | allocs/op |\n", baselineColumn)
 	fmt.Fprintf(w, "| ----- | ------ | ------------------- | -------- | ------ | --------- |\n")
 
 	var sizes []int
